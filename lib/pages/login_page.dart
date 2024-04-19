@@ -1,3 +1,4 @@
+import 'package:conecta_app/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:conecta_app/components/button.dart';
@@ -13,12 +14,12 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     void signUserIn(BuildContext context) {
-      //  aqui a gnt autentica o usuário nessa bosta
-      // Navigator.push(
-      //   context,
-      //   MaterialPageRoute(
-      //       builder: (context) => const HomePage())),
-      // );
+   
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => const HomePage()),
+      );
     }
 
     return Scaffold(
