@@ -1,4 +1,4 @@
-import 'package:conecta_app/pages/login_page.dart';
+import 'package:conecta_app/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -25,11 +25,11 @@ class _CarouselPageThreeState extends State<CarouselPageThree> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child: SvgPicture.asset(
-                'assets/svg/logo.svg',
+              child: Image.asset(
+                'assets/svg/Onboarding2.png',
                 fit: BoxFit.contain,
-                  height: 200,
-                  width: 200,
+                height: 400,
+                width: 400,
               ),
             ),
             Padding(

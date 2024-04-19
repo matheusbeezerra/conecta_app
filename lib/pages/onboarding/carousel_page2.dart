@@ -1,4 +1,4 @@
-import 'package:conecta_app/pages/carousel_page3.dart';
+import 'package:conecta_app/pages/onboarding/carousel_page3.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -20,11 +20,11 @@ class CarouselPageTwo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child: SvgPicture.asset(
-                'assets/svg/logo.svg',
+              child: Image.asset(
+                'assets/svg/Onboarding_1_com_logo.png',
                 fit: BoxFit.contain,
-                height: 200,
-                width: 200,
+                height: 400,
+                width: 400,
               ),
             ),
             Padding(

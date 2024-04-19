@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:conecta_app/pages/carousel_page2.dart';
+import 'package:conecta_app/pages/onboarding/carousel_page2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
