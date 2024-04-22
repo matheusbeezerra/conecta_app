@@ -81,6 +81,26 @@ flutter:
      - assets/svg/filme_8.jpg
      - assets/svg/filme_9.jpg
 
+     #HOME HEADER
+     - assets/home/header/imgBackHome1.png
+     #HOME CARROSSEL
+     - assets/home/carrossel/campusGilbertoFreyre.png
+     - assets/home/carrossel/campusAnisioTeixeira.png
+     - assets/home/carrossel/campusUlysses.png
+     - assets/home/carrossel/cinemaPorto.png
+     - assets/home/carrossel/engenhoMassangana.png
+     #HOME PRODUTOS
+     - assets/home/produtos/imgMuHNE.png
+     - assets/home/produtos/imgCinemateca.png
+     - assets/home/produtos/imgCinema.png
+     - assets/home/produtos/imgEditora.png
+     - assets/home/produtos/imgFormacao.png
+     - assets/home/produtos/imgPesquisaEscolar.png
+     - assets/home/produtos/imgPibic.png
+     - assets/home/produtos/imgVillaDigital.png
+
+    
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
