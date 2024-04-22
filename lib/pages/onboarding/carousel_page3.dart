@@ -1,6 +1,5 @@
 import 'package:conecta_app/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 void main() {
   runApp(const MaterialApp(

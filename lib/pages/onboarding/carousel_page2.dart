@@ -1,6 +1,5 @@
 import 'package:conecta_app/pages/onboarding/carousel_page3.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MaterialApp(

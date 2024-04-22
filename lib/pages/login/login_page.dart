@@ -1,4 +1,3 @@
-import 'package:conecta_app/pages/cinema/home_cinema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:conecta_app/components/button.dart';
@@ -15,11 +14,11 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     void signUserIn(BuildContext context) {
       //  aqui a gnt autentica o usuário nessa bosta
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => const HomeCinemaPage()),
-      );
+      // Navigator.push(
+      //   context,
+      //   MaterialPageRoute(
+      //       builder: (context) => const HomePage()),
+      // );
     }
 
     return Scaffold(
