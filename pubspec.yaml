@@ -36,6 +36,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   flutter_svg: ^2.0.10+1
+  carousel_slider: ^4.2.1
+  url_launcher: ^6.2.6
 
 dev_dependencies:
   flutter_test:
@@ -63,9 +65,21 @@ flutter:
   assets:
      - assets/svg/logo-1.svg
      - assets/svg/logo.svg
-     - assets/svg/menina1.svg
-     - assets/svg/menina2.svg
-     - assets/svg/menina3.svg
+     - assets/svg/imagem-cinema.jpg
+     - assets/svg/Onboarding_1_com_logo.png
+     - assets/svg/Onboarding_1_sem_logo.png
+     - assets/svg/Onboarding2.png
+     - assets/svg/logo-cinema.svg
+     - assets/svg/Onboarding3.png
+     - assets/svg/filme_1.jpg
+     - assets/svg/filme_3.jpg
+     - assets/svg/filme_2.jpg
+     - assets/svg/filme_4.jpg
+     - assets/svg/filme_5.jpg
+     - assets/svg/filme_6.jpg
+     - assets/svg/filme_7.jpg
+     - assets/svg/filme_8.jpg
+     - assets/svg/filme_9.jpg
 
      #HOME HEADER
      - assets/home/header/imgBackHome1.png

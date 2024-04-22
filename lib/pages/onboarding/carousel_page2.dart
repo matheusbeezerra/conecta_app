@@ -1,21 +1,15 @@
-import 'package:conecta_app/pages/login_page.dart';
+import 'package:conecta_app/pages/onboarding/carousel_page3.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 void main() {
   runApp(const MaterialApp(
-    home: CarouselPageThree(),
+    home: CarouselPageTwo(),
   ));
 }
 
-class CarouselPageThree extends StatefulWidget {
-  const CarouselPageThree({super.key});
+class CarouselPageTwo extends StatelessWidget {
+  const CarouselPageTwo({super.key});
 
-  @override
-  State<CarouselPageThree> createState() => _CarouselPageThreeState();
-}
-
-class _CarouselPageThreeState extends State<CarouselPageThree> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,11 +19,11 @@ class _CarouselPageThreeState extends State<CarouselPageThree> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child: SvgPicture.asset(
-                'assets/svg/logo.svg',
+              child: Image.asset(
+                'assets/svg/Onboarding_1_com_logo.png',
                 fit: BoxFit.contain,
-                  height: 200,
-                  width: 200,
+                height: 400,
+                width: 400,
               ),
             ),
             Padding(
@@ -37,12 +31,13 @@ class _CarouselPageThreeState extends State<CarouselPageThree> {
               child: Column(
                 children: [
                   const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
+                    padding: EdgeInsets.symmetric(horizontal: 14.0),
                     child: FractionallySizedBox(
-                      widthFactor: 1.0,
+                      widthFactor: 0.9,
                       child: Center(
                         child: Text(
-                          'Explore o que há de melhor nos principais produtos da Fundaj, como museu, cinemas, editora, formação, pesquisa e muito mais!',
+                          'Seja bem-vindo ao Conecta Fundaj, o aplicativo que torna você uma parte da Fundação Joaquim Nabuco.',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 18.0,
                             color: Color.fromARGB(255, 26, 77, 28),
@@ -62,7 +57,8 @@ class _CarouselPageThreeState extends State<CarouselPageThree> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => LoginPage()),
+                                builder: (context) =>
+                                    const CarouselPageThree()),
                           );
                         },
                         style: ElevatedButton.styleFrom(

@@ -1,4 +1,4 @@
-import 'package:conecta_app/pages/carousel_page1.dart';
+import 'package:conecta_app/pages/onboarding/carousel_page1.dart';
 import 'package:flutter/material.dart';
 
 void main() {
