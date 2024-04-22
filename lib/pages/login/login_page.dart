@@ -1,8 +1,8 @@
+import 'package:conecta_app/pages/login/register_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:conecta_app/components/button.dart';
 import 'package:conecta_app/components/campo_input.dart';
-import 'package:conecta_app/pages/register_page.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
