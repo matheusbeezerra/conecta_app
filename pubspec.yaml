@@ -38,6 +38,7 @@ dependencies:
   flutter_svg: ^2.0.10+1
   carousel_slider: ^4.2.1
   url_launcher: ^6.2.6
+  animations: ^2.0.11
 
 dev_dependencies:
   flutter_test:
@@ -71,15 +72,16 @@ flutter:
      - assets/svg/Onboarding2.png
      - assets/svg/logo-cinema.svg
      - assets/svg/Onboarding3.png
-     - assets/svg/filme_1.jpg
-     - assets/svg/filme_3.jpg
-     - assets/svg/filme_2.jpg
-     - assets/svg/filme_4.jpg
-     - assets/svg/filme_5.jpg
-     - assets/svg/filme_6.jpg
-     - assets/svg/filme_7.jpg
-     - assets/svg/filme_8.jpg
-     - assets/svg/filme_9.jpg
+     - assets/svg/filme_1.jpeg
+     - assets/svg/filme_3.jpeg
+     - assets/svg/filme_2.jpeg
+     - assets/svg/filme_4.jpeg
+     - assets/svg/filme_5.jpeg
+     - assets/svg/filme_6.jpeg
+     - assets/svg/filme_7.jpeg
+     - assets/svg/filme_8.jpeg
+     - assets/svg/filme_9.jpeg
+     - assets/svg/filme_10.jpeg
 
      #HOME HEADER
      - assets/home/header/imgBackHome1.png
