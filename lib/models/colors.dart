@@ -7,4 +7,3 @@ const mediumGray = Color(0xFF6D6F71);
 const darkGray = Color(0xFF424242);
 const lightGray = Color(0xFFECECEC);
 const blackColor = Color(0xFF231F20);
-const lwhiteColor = Colors.white;

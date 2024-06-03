@@ -30,12 +30,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  url_launcher: ^6.0.9
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   flutter_svg: ^2.0.10+1
+
+
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +69,7 @@ flutter:
      - assets/svg/menina2.svg
      - assets/svg/menina3.svg
 
+
      #HOME HEADER
      - assets/home/header/imgBackHome1.png
      #HOME CARROSSEL
@@ -85,6 +88,17 @@ flutter:
      - assets/home/produtos/imgPibic.png
      - assets/home/produtos/imgVillaDigital.png
 
+     #PÁGINA CAMPUS - ÍCONES
+     - assets/svg/icones_campus/icone_biblioteca.svg
+     - assets/svg/icones_campus/icone_cinema.svg
+     - assets/svg/icones_campus/icone_cinemateca.svg
+     - assets/svg/icones_campus/icone_engenho.svg
+     - assets/svg/icones_campus/icone_muHne.svg
+     - assets/svg/icones_campus/icone_pesquisa.svg
+     - assets/svg/icones_campus/icone_pinacoteca.svg
+     - assets/svg/icones_campus/icone_villa_digital.svg
+
+
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -98,17 +112,18 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-Black.ttf
+          style: italic
+    - family: Urbanist
+      fonts:
+        - asset: assets/fonts/Urbanist-Bold.ttf
+          weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
