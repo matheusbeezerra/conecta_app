@@ -98,6 +98,24 @@ flutter:
      - assets/svg/icones_campus/icone_pinacoteca.svg
      - assets/svg/icones_campus/icone_villa_digital.svg
 
+     
+     #PÁGINA MUSEU
+     - assets/muhne/muhne_header.png
+     - assets/muhne/muhne_logo.png
+     - assets/svg/museu/icone_comochegar.svg
+     - assets/svg/museu/icone_informacoes.svg
+     - assets/svg/museu/icone_ingresso.svg
+     - assets/svg/museu/icone_telefone.svg
+     - assets/svg/museu/muhne_logo.svg
+
+     - assets/muhne/expo_museu360.png
+     - assets/muhne/expo_olinda.png
+     - assets/muhne/expo_patrimonio.png
+     - assets/muhne/expo_presenca_aloisio.png
+
+
+
+
 
     
 

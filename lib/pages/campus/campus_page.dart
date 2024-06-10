@@ -113,8 +113,7 @@ class CampusPage extends StatelessWidget {
 
                     Center(
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment
-                            .center, // Centralizes horizontally
+                        mainAxisAlignment: MainAxisAlignment.center, // Centralizes horizontally
                         crossAxisAlignment:
                             CrossAxisAlignment.center, // Centralizes vertically
                         children: [

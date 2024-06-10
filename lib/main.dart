@@ -1,4 +1,5 @@
-import 'package:conecta_app/pages/home/home_page.dart';
+ 
+import 'package:conecta_app/pages/carousel_page1.dart'; 
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,10 +16,12 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           elevation: 0.0,
       )),
-       home:  const HomePage(),
-      //  home: const CarouselPageOne(),
+       
+       home: const CarouselPageOne(),
        debugShowCheckedModeBanner: false,
        
     );
   }
 }
+
+ 
