@@ -1,16 +1,20 @@
-import 'package:conecta_app/pages/carousel_page3.dart';
+import 'package:conecta_app/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MaterialApp(
-    home: CarouselPageTwo(),
+    home: CarouselPageThree(),
   ));
 }
 
-class CarouselPageTwo extends StatelessWidget {
-  const CarouselPageTwo({super.key});
+class CarouselPageThree extends StatefulWidget {
+  const CarouselPageThree({super.key});
 
+  @override
+  State<CarouselPageThree> createState() => _CarouselPageThreeState();
+}
+
+class _CarouselPageThreeState extends State<CarouselPageThree> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,11 +24,11 @@ class CarouselPageTwo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child: SvgPicture.asset(
-                'assets/svg/logo.svg',
+              child: Image.asset(
+                'assets/svg/Onboarding2.png',
                 fit: BoxFit.contain,
-                height: 200,
-                width: 200,
+                height: 400,
+                width: 400,
               ),
             ),
             Padding(
@@ -32,13 +36,12 @@ class CarouselPageTwo extends StatelessWidget {
               child: Column(
                 children: [
                   const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 14.0),
+                    padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
                     child: FractionallySizedBox(
-                      widthFactor: 0.9,
+                      widthFactor: 1.0,
                       child: Center(
                         child: Text(
-                          'Seja bem-vindo ao Conecta Fundaj, o aplicativo que torna você uma parte da Fundação Joaquim Nabuco.',
-                          textAlign: TextAlign.center,
+                          'Explore o que há de melhor nos principais produtos da Fundaj, como museu, cinemas, editora, formação, pesquisa e muito mais!',
                           style: TextStyle(
                             fontSize: 18.0,
                             color: Color.fromARGB(255, 26, 77, 28),
@@ -58,8 +61,7 @@ class CarouselPageTwo extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>
-                                    const CarouselPageThree()),
+                                builder: (context) => LoginPage()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
