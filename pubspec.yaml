@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.0.9
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -84,6 +85,7 @@ flutter:
      - assets/home/produtos/imgPesquisaEscolar.png
      - assets/home/produtos/imgPibic.png
      - assets/home/produtos/imgVillaDigital.png
+
 
     
 

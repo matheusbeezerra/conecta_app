@@ -53,7 +53,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
-class TextPossibilidades {
-  const TextPossibilidades();
-}
+ 
