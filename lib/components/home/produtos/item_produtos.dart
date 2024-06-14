@@ -13,7 +13,17 @@ class ItemProdutoFundaj extends StatelessWidget {
   Widget build(BuildContext context) {
     return Directionality(
       textDirection: TextDirection.ltr,
-      child: Column(
+      child: GestureDetector(      
+           onTap: () {
+          // Aqui, você pode navegar para o widget desejado
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => produtosFundaj.endProduto,
+            ),
+          );
+        },
+          child:Column(
         // tudo
         children: [
           Container(
@@ -35,6 +45,6 @@ class ItemProdutoFundaj extends StatelessWidget {
               style: const TextStyle(fontSize: 14, color: darkGray)),
         ],
       ),
-    );
+    ));
   }
 }
