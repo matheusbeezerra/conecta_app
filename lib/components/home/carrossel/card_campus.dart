@@ -1,4 +1,4 @@
-import 'package:conecta_app/models/info_card_campus.dart';
+import 'package:conecta_app/models/campus/info_card_campus.dart';
 import 'package:conecta_app/pages/campus/campus_page.dart';
 import 'package:flutter/material.dart'; 
 import 'package:conecta_app/models/colors.dart';

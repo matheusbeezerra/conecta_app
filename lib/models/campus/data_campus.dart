@@ -1,3 +1,11 @@
+import 'package:conecta_app/components/campus/icones_produtos_green/icone_biblioteca.dart';
+import 'package:conecta_app/components/campus/icones_produtos_green/icone_cinema.dart';
+import 'package:conecta_app/components/campus/icones_produtos_green/icone_cinemateca.dart';
+import 'package:conecta_app/components/campus/icones_produtos_green/icone_engenho.dart';
+import 'package:conecta_app/components/campus/icones_produtos_green/icone_museu.dart';
+import 'package:conecta_app/components/campus/icones_produtos_green/icone_pesquisas.dart';
+import 'package:conecta_app/components/campus/icones_produtos_green/icone_pinacoteca.dart';
+import 'package:conecta_app/components/campus/icones_produtos_green/icone_villa.dart';
 import 'package:conecta_app/models/campus/info_card_campus.dart';
 //Dados e imagens dos Campus,mokados para o carossel de campus na home
 
@@ -8,7 +16,7 @@ const dataCampus = [
       rota: 'CampusGilbertoFreyre()',
       local: 'Casa Forte',
       end: 'Av. Dezessete de Agosto, 2187 - Casa Forte, Recife - PE, 52061-540',
-      produtos: [],
+      produtos:[ IconeCinema(),Iconecinemateca(),IconeMuseu(),IconePinacoteca(), ],
       comoChegar: 'https://www.gov.br/fundaj',
       imageAsset: 'assets/home/carrossel/campusGilbertoFreyre.png',
       textoDescritivo:
@@ -16,10 +24,10 @@ const dataCampus = [
   DataCardCampus(
       indice: '1',
       campus: 'Campus Anísio Teixeira',
-      rota: 'CampusAnisioTeixeira()',
+      rota:'CampusAnisioTeixeira()',
       local: 'Apipucos',
       end: 'R. Dois Irmãos, 92 - Dois Irmãos,Recife - PE, 52071-440',
-      produtos: [],
+     produtos:[ IconeBiblioteca(), IconePesquisas(), IconeVilla(), ],
       comoChegar: 'https://www.gov.br/fundaj',
       imageAsset: 'assets/home/carrossel/campusAnisioTeixeira.png',
       textoDescritivo:
@@ -27,32 +35,32 @@ const dataCampus = [
   DataCardCampus(
       indice: '2',
       campus: 'Campus Ulysses Pernambucano',
-      rota: 'CampusUlyssesPernambucano()',
+      rota:'CampusUlyssesPernambucano()',
       local: 'Derby',
       end: 'R. Henrique Dias, 609 - Derby,Recife - PE, 52010-100',
-      produtos: [],
-      comoChegar: 'https://www.gov.br/fundaj',
+      produtos:[IconeCinema(), ],
+     comoChegar: 'https://www.gov.br/fundaj',
       imageAsset: 'assets/home/carrossel/campusUlysses.png',
       textoDescritivo:
           'O campus Ulysses Pernambucano abriga atividades de formação lato e stricto sensu e a Escola de Inovação e Políticas Públicas (EIPP), vinculada à   Diretoria de Formação Profissional e Inovação (Difor). Esse campus reúne, ainda, a sala de Exposição Vicente do Rego Monteiro, a Editora Massangana, o Cinema da Fundação, e as salas de Leitura Nilo Pereira e de Videoarte Cristina Tavares, equipamentos vinculados à Diretoria de Memória, Educação, Cultura e Arte (Dimeca).'),
   DataCardCampus(
       indice: '3',
       campus: 'Engenho Massangana',
-      rota: 'CampusEngenhoMassangana()',
+      rota:'CampusEngenhoMassangana()',
       local: 'Cabo',
       end: 'Cabo de Santo Agostinho - PE, 54510-992',
-      produtos: [],
-      comoChegar: 'https://www.gov.br/fundaj',
+      produtos:[ IconeEngenho(), ],
+     comoChegar: 'https://www.gov.br/fundaj',
       imageAsset: 'assets/home/carrossel/engenhoMassangana.png',
       textoDescritivo:
           'Também está sob a guarda da Fundação Joaquim Nabuco o Engenho Massangana, no Cabo de Santo Agostinho. Tombado como Parque Nacional da Abolição, o Engenho Massangana foi morada do abolicionista Joaquim Nabuco durante parte da sua infância.'),
   DataCardCampus(
       indice: '4',
       campus: 'Cinema do Porto',
-      rota: 'CampusCinemaPorto()',
+      rota:'CampusCinemaPorto()',
       local: ' Cais do Apolo',
       end: 'Cais do Apolo, 222 - 16º andar ,Recife, PE, 50030-230',
-      produtos: [],
+      produtos:[ IconeCinema(), ],
       comoChegar: 'https://www.gov.br/fundaj',
       imageAsset: 'assets/home/carrossel/cinemaPorto.png',
       textoDescritivo:

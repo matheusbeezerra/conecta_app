@@ -1,6 +1,6 @@
-
 import 'package:conecta_app/components/campus/gradient_container.dart';
-import 'package:conecta_app/models/info_card_campus.dart';
+import 'package:conecta_app/models/campus/info_card_campus.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 
@@ -110,13 +110,11 @@ class CampusPage extends StatelessWidget {
                             fontWeight: FontWeight.bold)),
 
                     ///AQUI VAI UMA LINHA COM OS ITENS DE cardCampus.produtos
-                    // ... dentro da widget CampusPage ...
 
-                    Center(
+                    Padding(                    padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center, // Centralizes horizontally
-                        crossAxisAlignment:
-                            CrossAxisAlignment.center, // Centralizes vertically
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           // Exiba os ícones dinamicamente
                           for (final produto in dataCampus.produtos)
@@ -125,14 +123,14 @@ class CampusPage extends StatelessWidget {
                               height:
                                   200, // Altura desejada para todos os ícones
                               child: Padding(
-                                padding: const EdgeInsets.fromLTRB(4, 20, 4, 20),
+                                padding:
+                                    const EdgeInsets.fromLTRB(4, 20, 4, 20),
                                 child: produto,
                               ),
                             ),
                         ],
                       ),
                     )
-
                   ],
                 ),
               ),

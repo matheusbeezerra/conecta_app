@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           elevation: 0.0,
       )),
-       home: const CarouselPageOne(),
+     home: const CarouselPageOne(),
        debugShowCheckedModeBanner: false,
     );
   }

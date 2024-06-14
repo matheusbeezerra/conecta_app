@@ -1,5 +1,5 @@
 import 'package:conecta_app/components/home/carrossel/card_campus.dart';
-import 'package:conecta_app/models/data_campus.dart';
+import 'package:conecta_app/models/campus/data_campus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
