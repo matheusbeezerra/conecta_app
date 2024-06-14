@@ -101,6 +101,15 @@ flutter:
      - assets/home/produtos/imgPibic.png
      - assets/home/produtos/imgVillaDigital.png
 
+     #PÁGINA CAMPUS - ÍCONES
+     - assets/svg/icones_campus/icone_biblioteca.svg
+     - assets/svg/icones_campus/icone_cinema.svg
+     - assets/svg/icones_campus/icone_cinemateca.svg
+     - assets/svg/icones_campus/icone_engenho.svg
+     - assets/svg/icones_campus/icone_muHne.svg
+     - assets/svg/icones_campus/icone_pesquisa.svg
+     - assets/svg/icones_campus/icone_pinacoteca.svg
+     - assets/svg/icones_campus/icone_villa_digital.svg
 
     
 

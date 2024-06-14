@@ -1,5 +1,6 @@
+
 import 'package:conecta_app/components/campus/gradient_container.dart';
-import 'package:conecta_app/models/campus/info_card_campus.dart';
+import 'package:conecta_app/models/info_card_campus.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 
