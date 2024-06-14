@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter_svg: ^2.0.10+1
   carousel_slider: ^4.2.1
-  url_launcher: ^6.2.6
+  url_launcher: ^6.3.0
   animations: ^2.0.11
 
 dev_dependencies:
@@ -100,6 +100,16 @@ flutter:
      - assets/home/produtos/imgPesquisaEscolar.png
      - assets/home/produtos/imgPibic.png
      - assets/home/produtos/imgVillaDigital.png
+
+     #PÁGINA CAMPUS - ÍCONES
+     - assets/svg/icones_campus/icone_biblioteca.svg
+     - assets/svg/icones_campus/icone_cinema.svg
+     - assets/svg/icones_campus/icone_cinemateca.svg
+     - assets/svg/icones_campus/icone_engenho.svg
+     - assets/svg/icones_campus/icone_muHne.svg
+     - assets/svg/icones_campus/icone_pesquisa.svg
+     - assets/svg/icones_campus/icone_pinacoteca.svg
+     - assets/svg/icones_campus/icone_villa_digital.svg
 
     
 
