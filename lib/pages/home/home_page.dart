@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                       Padding(
                           padding: EdgeInsets.fromLTRB(24, 8, 0, 0),
                           child: TextExplorePossibilidades()),
-                     Padding(
+                      Padding(
                         padding:EdgeInsets.all(4),
                         child:  ProdutosFundaj()),
                       SizedBox(
