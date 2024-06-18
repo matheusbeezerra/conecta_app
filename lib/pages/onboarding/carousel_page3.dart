@@ -1,3 +1,4 @@
+import 'package:conecta_app/models/colors.dart';
 import 'package:conecta_app/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -66,11 +67,11 @@ class _CarouselPageThreeState extends State<CarouselPageThree> {
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor:
-                              const Color.fromARGB(255, 184, 219, 178),
+                              mediumGreen,
                         ),
                         child: const Text(
                           'Pular',
-                          style: TextStyle(color: Color.fromARGB(255, 26, 77, 28)),
+                          style: TextStyle(color:Colors.white),
                         ),
                       ),
                     ),
