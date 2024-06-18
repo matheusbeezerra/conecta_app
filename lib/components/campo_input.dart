@@ -6,7 +6,7 @@ class InputCampo extends StatelessWidget {
   final String hintText;
   final bool obscureText;
 
-   const InputCampo({
+  const InputCampo({
     super.key,
     required this.controller,
     required this.hintText,

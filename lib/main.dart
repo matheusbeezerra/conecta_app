@@ -1,9 +1,10 @@
 // ignore_for_file: unused_import
-import 'package:conecta_app/pages/carousel_page1.dart';
 import 'package:conecta_app/pages/editora/livros_details.dart';
 import 'package:conecta_app/pages/editora/livros_list.dart';
 import 'package:conecta_app/pages/editora/editora_page.dart';
+import 'package:conecta_app/pages/login/login_page.dart';
 import 'package:conecta_app/utils/app_routes.dart';
+import 'package:conecta_app/pages/onboarding/carousel_page1.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           elevation: 0.0,
       )),
-        home: const EditoraPage(),
+        home: const CarouselPageOne(),
         routes: {
           AppRoutes.EDITORA_PAGE: (ctx) => const EditoraPage(),
           // AppRoutes.LIVROS_DETAILS: (ctx) => LivrosDetails(),

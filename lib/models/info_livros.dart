@@ -8,7 +8,7 @@ class Livros {
   final String descricao;
   final String autor;
   final String verMais;
-  final String pdfAsset;
+  final String url;
 
   // O construtor deve ser assim:
   const Livros({
@@ -19,7 +19,7 @@ class Livros {
     required this.descricao,
     required this.autor,
     required this.verMais,
-    required this.pdfAsset,
+    required this.url,
     
   });
 

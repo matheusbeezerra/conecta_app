@@ -1,7 +1,7 @@
 import 'package:conecta_app/models/info_livros.dart';
 
-List<Livros> livrosList = [
-  const Livros(
+const livrosList = [
+    Livros(
     id: '1', 
     title: 'Competências e Habilidades para uma Educação 3.0',
     resumo: 'Resumo',
@@ -9,9 +9,9 @@ List<Livros> livrosList = [
     autor: 'Marie Jane Soares Carvalho, \nViviane Toraci Alonso de Andrade',
     imageAsset: 'assets/editora/capaLivros/CompetênciaseHabilidades.png', 
     verMais: 'Ver Mais',
-    pdfAsset: 'assets/editora/pdfLivros/livro_competenciaseHabilidades.pdf',
+    url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/competencias-e-habilidades-para-uma-educacao-3-0.pdf',
   ),
-  const Livros(
+    Livros(
     id: '2', 
     title: 'Ciranda Pernambucana - Antologia Poética Infanto Juvenil',
     resumo: 'Resumo',
@@ -19,36 +19,36 @@ List<Livros> livrosList = [
     autor: 'Liliane Maria Jamir e Silva',
     imageAsset: 'assets/editora/capaLivros/CirandaPernambucana.png', 
     verMais: 'Ver Mais',
-    pdfAsset: 'assets/editora/pdfLivros/livro_cirandaPernambucana.pdf',
+    url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/ciranda-pernambucana.pdf',
   ),
-  const Livros(
+    Livros(
     id: '3', 
-    title: 'Energia, organizações e sociedade: um debate necessário',
+    title: 'Cultura Viva do Nordeste – Perfis dos 90 vencedores do Prêmio Delmiro Gouveia de Economia Criativa',
     resumo: 'Resumo',
-    descricao: 'Energia, organizações e sociedade: um debate necessário é uma obra de caráter interdisciplinar que propõe o diálogo acerca do investimento em usinas hidroelétricas, atentando para o conflito de interesses entre empresários e a população local',
-    autor: 'Luiz Alex Silva Saraiva, \nAdriana Vinholi Rampazo',
-    imageAsset: 'assets/editora/capaLivros/EnergiaOrganizaçõesESociedade.png', 
+    descricao: 'Cultura viva do Nordeste é, na sua estrutura, uma longa reportagem. Cada retrato ou perfil compõe, na sua heterogeneidade, a unidade fundamental traduzida numa narrativa tão cheia de calor humano quanto os personagens que aborda. Sem perder a objetividade e a sobriedade, que são virtudes do jornalismo orgulhoso de dizer o próprio nome. O Prêmio Delmiro Gouveia de Economia Criativa que tem neste livro um importante registro de memória, com pitadas de história oral, é parte de uma realização mais ampla.',
+    autor: 'Karla Veloso',
+    imageAsset: 'assets/editora/capaLivros/CulturaVivaDoNordeste.png', 
     verMais: 'Ver Mais',
-    pdfAsset: 'assets/editora/pdfLivros/livro_energia.pdf',
+    url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/cultura-viva-do-nordeste.pdf',
   ),
-  const Livros(
+  Livros(
     id: '4', 
-    title: 'Políticas e gestão da Educação: Pesquisa Educacional em Pernambuco',
+    title: 'Gilberto Freyre & a Educação',
     resumo: 'Resumo', 
-    descricao: 'Este livro faz parte da trilogia com textos do VI Encontro de Pesquisa Educacional de Pernambuco. O tema das políticas educacionais permeia todos os textos em suas diversas nuanças. A obra em suma aponta para questões relativas ao Plano Nacional de Educação, como um referencial para construção das políticas educacionais. Algumas destas políticas são analisadas nos artigos reunidos nesta publicação, que tem como objetivo tornar pública a produção acadêmica no campo da pesquisa educacional.',
-    autor: 'Cibele Maria Lima Rodrigues, \nPatrícia Maria Uchôa Simões, \nLuciana Rosa Marques, \nEdnaldo Ferreira Torres',
-    imageAsset: 'assets/editora/capaLivros/PolíticasEGestão.png', 
+    descricao: 'O que se apresenta neste livro é fruto de uma série de reflexões que o professor e sociólogo Amurabi Oliveira vem realizando sobre o pensamento de Gilberto Freyre. A partir dessas reflexões, tem sido enfatizada a relevância do sociólogo pernambucano como um pensador das ciências sociais que possui uma contribuição valiosa para a educação, destacando assim seu lugar como pensador educacional. A relevância de revisitar o pensamento de Gilberto Freyre a partir desse ângulo deve-se ao fato de que continua atual sua proposta pedagógica, a partir de uma forte articulação entre o mundo social e os conhecimentos teóricos.',
+    autor: 'Amurabi Oliveira ',
+    imageAsset: 'assets/editora/capaLivros/GilbertoFreyre&aEducação.png', 
     verMais: 'Ver Mais',
-    pdfAsset: 'assets/editora/pdfLivros/livro_PolíticasEGestão.pdf',
+    url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/gilberto-freyre-a-educacao-digital.pdf',
   ),
-  const Livros(
+  Livros(
     id: '5', 
-    title: 'Práticas pedagógicas e formação de professores em contextos diferenciados',
+    title: 'A Sudene e seu Inventor',
     resumo: 'Resumo', 
     descricao:'A obra Práticas pedagógicas e formação de professores em contextos diferenciados, integrante da trilogia do VI Encontro de Pesquisa Educacional de Pernambuco (EPEPE) enaltece a perseverança de profissionais que promovem profundas mudanças nos diversos contextos educacionais do Estado. O título aborda as contribuições para o processo de alfabetização a partir dos estudos de “esquemas” por meio de ação de professores em contextos de diversidades da aprendizagem.',
-    autor: 'Cibele Maria Lima Rodrigues, \nPatrícia Maria Uchôa Simões, \nLuciana Rosa Marques, \nEdnaldo Ferreira Torres',
-    imageAsset: 'assets/editora/capaLivros/PráticasPedagógicas.png', 
+    autor: 'Clemente Rosas',
+    imageAsset: 'assets/editora/capaLivros/ASudeneeseuInventor.png', 
     verMais: 'Ver Mais',
-    pdfAsset: 'assets/editora/pdfLivros/livro_PráticasPedagógicas.pdf',
+    url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/a-sudene-e-seu-inventor.pdf',
   ),
 ];

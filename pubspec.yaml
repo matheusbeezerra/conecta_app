@@ -37,6 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter_svg: ^2.0.10+1
   url_launcher: ^6.3.0
+  carousel_slider: ^4.2.1
+  animations: ^2.0.11
+  pdf: ^3.10.8
 
 dev_dependencies:
   flutter_test:
@@ -64,9 +67,6 @@ flutter:
   assets:
       - assets/svg/logo-1.svg
       - assets/svg/logo.svg
-      - assets/svg/menina1.svg
-      - assets/svg/menina2.svg
-      - assets/svg/menina3.svg
 
       #HOME HEADER
       - assets/home/header/imgBackHome1.png
@@ -90,15 +90,46 @@ flutter:
       #EDITORA LIVROS
       - assets/editora/capaLivros/CompetênciaseHabilidades.png
       - assets/editora/capaLivros/CirandaPernambucana.png
-      - assets/editora/capaLivros/EnergiaOrganizaçõesESociedade.png
-      - assets/editora/capaLivros/PolíticasEGestão.png
-      - assets/editora/capaLivros/PráticasPedagógicas.png
-      #EDITORA LIVROS PDF
-      - assets/editora/pdfLivros/livro_competenciaseHabilidades.pdf
-      - assets/editora/pdfLivros/livro_cirandaPernambucana.pdf
-      - assets/editora/pdfLivros/livro_energia.pdf
-      - assets/editora/pdfLivros/livro_PolíticasEGestão.pdf
-      - assets/editora/pdfLivros/livro_PráticasPedagógicas.pdf
+      - assets/editora/capaLivros/CulturaVivaDoNordeste.png
+      - assets/editora/capaLivros/GilbertoFreyre&aEducação.png
+      - assets/editora/capaLivros/ASudeneeseuInventor.png
+      #LOGO, ONBORAD E FILMES
+      - assets/svg/logo-1.svg
+      - assets/svg/logo.svg
+      - assets/svg/imagem-cinema.jpg
+      - assets/svg/Onboarding_1_com_logo.png
+      - assets/svg/Onboarding_1_sem_logo.png
+      - assets/svg/Onboarding2.png
+      - assets/svg/logo-cinema.svg
+      - assets/svg/Onboarding3.png
+      - assets/svg/filme_1.jpeg
+      - assets/svg/filme_3.jpeg
+      - assets/svg/filme_2.jpeg
+      - assets/svg/filme_4.jpeg
+      - assets/svg/filme_5.jpeg
+      - assets/svg/filme_6.jpeg
+      - assets/svg/filme_7.jpeg
+      - assets/svg/filme_8.jpeg
+      - assets/svg/filme_9.jpeg
+      - assets/svg/filme_10.jpeg
+
+      #HOME HEADER
+      - assets/home/header/imgBackHome1.png
+      #HOME CARROSSEL
+      - assets/home/carrossel/campusGilbertoFreyre.png
+      - assets/home/carrossel/campusAnisioTeixeira.png
+      - assets/home/carrossel/campusUlysses.png
+      - assets/home/carrossel/cinemaPorto.png
+      - assets/home/carrossel/engenhoMassangana.png
+      #HOME PRODUTOS
+      - assets/home/produtos/imgMuHNE.png
+      - assets/home/produtos/imgCinemateca.png
+      - assets/home/produtos/imgCinema.png
+      - assets/home/produtos/imgEditora.png
+      - assets/home/produtos/imgFormacao.png
+      - assets/home/produtos/imgPesquisaEscolar.png
+      - assets/home/produtos/imgPibic.png
+      - assets/home/produtos/imgVillaDigital.png
 
     
 

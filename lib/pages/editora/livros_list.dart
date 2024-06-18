@@ -2,6 +2,7 @@ import 'package:conecta_app/models/data_livros.dart';
 import 'package:conecta_app/models/info_livros.dart';
 import 'package:conecta_app/pages/editora/livros_details.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BookList extends StatelessWidget {
   const BookList({super.key});
@@ -22,10 +23,14 @@ class BookList extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(
-                      livros.imageAsset,
-                      width: 150,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(10.0), // Adjust the radius as needed
+                      child: Image.asset(
+                        livros.imageAsset,
+                        width: 150,
+                      ),
                     ),
+                                        
                     const SizedBox(width: 10),
                     Flexible(
                       child: Column(
@@ -61,7 +66,9 @@ class BookList extends StatelessWidget {
                   child: ButtonBar(
                     children: <Widget>[
                       TextButton(
-                        child: const Text('Ver Mais'),
+                        child: const Text('Ver Mais',
+                        style: TextStyle(color: Color(0xFF6D6F71),),
+                        ),
                         onPressed: () {
                           Navigator.push(
                             context,
@@ -71,11 +78,38 @@ class BookList extends StatelessWidget {
                           );
                         },
                       ),
-                      TextButton.icon(
-                        onPressed: () {},
-                        icon: const Icon(Icons.download),
-                        label: const Text('Download'),
-                      ),
+                      Padding(
+                      padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                      child: TextButton.icon(
+                          //Rota do botão
+
+
+                          // onPressed: () async {
+                          //   // Open the link in a web browser
+                          //   if (await canLaunchUrl(Uri.parse(livros.download))) {
+                          //     await launchUrl(Uri.parse(livros.download));
+                          //   }
+                          // },
+
+                        onPressed: () async {
+                          final Uri url = Uri.parse(livros.url);
+                            if (!await launchUrl(url)) {
+                              throw Exception('Could not launch $url');
+                            }
+                        },
+
+
+                        
+                          style: ElevatedButton.styleFrom(
+                            padding: const EdgeInsets.fromLTRB(1, 0, 0, 0),
+                          ),
+                          icon: const Icon(Icons.download,
+                              size: 22, color: Color(0xFF0F3834),),
+                          label: const Text("Download",
+                              style: TextStyle(
+                                  color: Color(0xFF0F3834),
+                                  fontWeight: FontWeight.bold))),
+                    ),
                     ],
                   ),
                 ),

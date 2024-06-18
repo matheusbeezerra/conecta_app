@@ -1,6 +1,6 @@
 import 'package:conecta_app/models/info_livros.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LivroDetails extends StatelessWidget {
   final Livros livros;
@@ -69,6 +69,33 @@ class LivroDetails extends StatelessWidget {
                 style: const TextStyle(fontSize: 16.0),
               ),
             ),
+
+            ElevatedButton.icon(
+              icon: const Icon(
+                Icons.download,
+                color: Colors.white,
+              ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF738379),
+                  shadowColor: Colors.white,
+                  padding: const EdgeInsets.fromLTRB(130.0, 0, 130.0, 0)
+                ),
+                
+                onPressed: () async {
+                  final Uri url = Uri.parse(livros.url);
+                    if (!await launchUrl(url)) {
+                      throw Exception('Could not launch $url');
+                    }
+                },
+              
+                label: const Text(
+                  'Baixar em pdf',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+
           ],
         ),
       ),

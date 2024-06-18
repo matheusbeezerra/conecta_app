@@ -1,8 +1,8 @@
 import 'package:conecta_app/components/home/produtos/item_produtos.dart';
 import 'package:conecta_app/models/data_produtos.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:conecta_app/pages/cinema/home_cinema.dart';
+import 'package:conecta_app/pages/editora/editora_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 // Cria um grid para os ícones que levam  aos produtos da Fundaj
 //os ícones são customizados em ItemProdutoFundaj
@@ -17,13 +17,18 @@ class ProdutosFundaj extends StatelessWidget {
         
         child: GestureDetector(
           onTap: () {
-            
+            Navigator.push(
+            context,
+            MaterialPageRoute(
+            builder: (context) => const EditoraPage()
+        ),
+      );
           },
           child: GridView.count(
             crossAxisCount: 4,
             mainAxisSpacing: 4,
             crossAxisSpacing: 4,
-            childAspectRatio: 0.82, // Adicione padding
+            childAspectRatio: 0.82,
             shrinkWrap: true,
             children: dataProdutos.map((prod) {
               return ItemProdutoFundaj(prod);
