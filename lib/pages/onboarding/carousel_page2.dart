@@ -1,3 +1,4 @@
+import 'package:conecta_app/models/colors.dart';
 import 'package:conecta_app/pages/onboarding/carousel_page3.dart';
 import 'package:flutter/material.dart';
 
@@ -63,11 +64,11 @@ class CarouselPageTwo extends StatelessWidget {
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor:
-                              const Color.fromARGB(255, 184, 219, 178),
+                              mediumGreen,
                         ),
                         child: const Text(
                           'Pular',
-                          style: TextStyle(color: Color.fromARGB(255, 26, 77, 28)),
+                          style: TextStyle(color: Colors.white),
                         ),
                       ),
                     ),

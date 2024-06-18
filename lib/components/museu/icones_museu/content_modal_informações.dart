@@ -1,4 +1,4 @@
-import 'package:conecta_app/models/colors.dart'; 
+import 'package:conecta_app/models/colors.dart';
 import 'package:flutter/material.dart';
 
 class ContentModalInformacoes extends StatelessWidget {

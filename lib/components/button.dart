@@ -1,3 +1,4 @@
+import 'package:conecta_app/models/colors.dart';
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
@@ -14,7 +15,7 @@ class Button extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         margin: const EdgeInsets.symmetric(horizontal: 15.0),
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 5, 54, 5),
+          color:darkGreen,
           borderRadius: BorderRadius.circular(50)),
         child: const Center(
           child: Text('Acessar',

@@ -17,30 +17,33 @@ class MuseuPage extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           const SliverAppBar(
-            iconTheme: IconThemeData(color: Colors.white,),
+            iconTheme: IconThemeData(
+              color: Colors.white,
+            ),
             stretchTriggerOffset: 400.0,
             expandedHeight: 100.0,
-            toolbarHeight:100,
+            toolbarHeight: 100,
             title: Padding(
               padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-              child: MuhneLogo(),//Logo
+              child: MuhneLogo(), //Logo
             ),
             pinned: false,
             flexibleSpace: FlexibleSpaceBar(
-              background: MuhneHeader(),  //Background do appBar
+              background: MuhneHeader(), //Background do appBar
               // Use BackHeader as background
             ),
           ),
           SliverList(
             delegate: SliverChildListDelegate([
               const Column(
-                children: [  
+                children: [
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
                     child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround, // Centralizes horizontally
+                      mainAxisAlignment: MainAxisAlignment
+                          .spaceAround, // Centralizes horizontally
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [ 
+                      children: [
                         IconeComoChegar(),
                         IconeContato(),
                         IconeIngressos(),
@@ -58,17 +61,12 @@ class MuseuPage extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                    child: GridExpoMuseu(),
+                    child: GridExpoMuseu(), //cards com as exposicões virtuais do museu 
                   ),
-                  
-                 
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                    child: CarrosselExpoMuseu(),
+                    child: CarrosselExpoMuseu(),//carrossel com  as 
                   ),
-                  
-                 
-                
                 ],
               ),
             ]),

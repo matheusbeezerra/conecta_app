@@ -1,3 +1,4 @@
+import 'package:conecta_app/models/colors.dart';
 import 'package:conecta_app/pages/home/home_page.dart';
 import 'package:conecta_app/pages/login/register_page.dart';
 import 'package:flutter/material.dart';
@@ -81,7 +82,7 @@ class LoginPage extends StatelessWidget {
                           Expanded(
                             child: Divider(
                               thickness: 0.4,
-                              color: Color.fromARGB(255, 26, 77, 28),
+                              color: darkGreen,
                             ),
                           ),
                           Padding(
@@ -89,7 +90,7 @@ class LoginPage extends StatelessWidget {
                             child: Text(
                               'Acessar com',
                               style: TextStyle(
-                                color: Color.fromARGB(255, 26, 77, 28),
+                                color: darkGreen,
                                 fontSize: 16,
                               ),
                             ),
@@ -114,9 +115,8 @@ class LoginPage extends StatelessWidget {
                               )
                           ),
                       style: ElevatedButton.styleFrom(
-                        foregroundColor: const Color.fromARGB(255, 26, 77, 28),
-                        backgroundColor:
-                            const Color.fromARGB(255, 184, 219, 178),
+                        foregroundColor: Colors.white,
+                        backgroundColor:mediumGreen,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 25,
                             vertical:10,
@@ -139,7 +139,7 @@ class LoginPage extends StatelessWidget {
                           Text(
                             'Ainda não possui conta? Crie uma.',
                             style: TextStyle(
-                              color: Color.fromARGB(255, 26, 77, 28),
+                              color:darkGreen,
                               fontSize: 13,
                             ),
                           ),
