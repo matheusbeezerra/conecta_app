@@ -4,7 +4,7 @@ import 'package:conecta_app/pages/museu/muhne_page.dart';
 
 //Dados e imagens dos Campus,mokados para o carossel de campus na home
 
-const dataProdutos = [
+const dataProdutos = [   
   DataProdutos(
     produto: 'Museu',
     imgProduto:'assets/home/produtos/imgMuHNE.png',

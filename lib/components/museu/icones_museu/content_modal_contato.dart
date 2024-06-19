@@ -1,3 +1,4 @@
+import 'package:conecta_app/components/entendi_button.dart';
 import 'package:conecta_app/models/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -6,14 +7,14 @@ class ContentModalContato extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return const SizedBox(
       height: 450,
       width: double.infinity,
       child:   Padding(
-          padding: const EdgeInsets.fromLTRB(15, 30, 15, 30),
+          padding: EdgeInsets.fromLTRB(15, 30, 15, 30),
           child: Column(
             children: [
-              const Text(
+              Text(
                 "Contato:",
                 style: TextStyle(
                   color: darkGreen,
@@ -21,7 +22,7 @@ class ContentModalContato extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const Padding(
+              Padding(
                 padding: EdgeInsets.fromLTRB(10, 30, 10, 10),
                 child: Row(
                   children: [
@@ -39,7 +40,7 @@ class ContentModalContato extends StatelessWidget {
                   ],
                 ),
               ),
-              const Padding(
+              Padding(
                 padding: EdgeInsets.all(10),
                 child: Row(
                   children: [
@@ -55,7 +56,7 @@ class ContentModalContato extends StatelessWidget {
                   ],
                 ),
               ),
-              const Padding(
+              Padding(
                 padding: EdgeInsets.all(10),
                 child: Row(
                   children: [
@@ -68,17 +69,8 @@ class ContentModalContato extends StatelessWidget {
                 ),
               ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(0, 40, 0, 40),
-            child: ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(mediumGreen),
-              padding: MaterialStateProperty.all(const EdgeInsets.fromLTRB(40, 10, 40, 10))
-              ),
-                    onPressed: () {
-            Navigator.pop(context); // Isso vai fechar o BottomSheet
-                    },
-                    child: const Text('Entendi', style: TextStyle(color:Colors.white, fontSize: 18),),
-                  ),
+            padding: EdgeInsets.fromLTRB(0, 40, 0, 40),
+            child: EntendiButton(),
           ),  ],
             
           )),

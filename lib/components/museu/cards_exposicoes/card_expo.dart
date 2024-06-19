@@ -51,8 +51,7 @@ class CardExpoMuseu extends StatelessWidget {
                                   )),
                               //HORÁRIO E LOCAL
                               Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(0, 2, 0, 2),
+                                padding: const EdgeInsets.fromLTRB(0, 2, 0, 2),
                                 child: Row(
                                   children: [
                                     const Icon(Icons.location_on_outlined,
@@ -66,8 +65,7 @@ class CardExpoMuseu extends StatelessWidget {
                                 ),
                               ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(0, 2, 0, 2),
+                                padding: const EdgeInsets.fromLTRB(0, 2, 0, 2),
                                 child: Row(
                                   children: [
                                     const Icon(Icons.schedule_outlined,
@@ -81,8 +79,7 @@ class CardExpoMuseu extends StatelessWidget {
                                 ),
                               ),
                               Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(0, 2, 0, 2),
+                                padding: const EdgeInsets.fromLTRB(0, 2, 0, 2),
                                 child: Row(
                                   children: [
                                     const Icon(Icons.panorama_outlined,
@@ -102,7 +99,7 @@ class CardExpoMuseu extends StatelessWidget {
                             ],
                           ),
                         ),
-                  
+
                         //ABRIGA GESTUREDETECTOR PARA O MODAL
                         Padding(
                           padding: const EdgeInsets.fromLTRB(0, 10, 0, 2),
@@ -153,47 +150,46 @@ class CardExpoMuseu extends StatelessWidget {
                                                             .resumoCardExpo, // Resumo
                                                         style: const TextStyle(
                                                             fontSize: 16,
-                                                            color:
-                                                                mediumGray),
+                                                            color: mediumGray),
                                                       ),
                                                     ),
                                                   ),
                                                   Padding(
-                                                    padding: const EdgeInsets
-                                                        .fromLTRB(
-                                                        0, 25, 0, 5),
-                                                    child: OutlinedButton(
-                                                      style: ButtonStyle(
-                                                          side: MaterialStateProperty.all(
-                                                              const BorderSide(
-                                                                  color:mediumGreen,
-                                                                  width:2.0)),
-                                                          padding: MaterialStateProperty.all(
-                                                              const EdgeInsets.fromLTRB(140,10,140,10))),
-                                                      onPressed: () {
-                                                        Navigator.pop(context); // Isso vai fechar o modal
-                                                      },
-                                                      child: const Text(
-                                                        'Entendi',
-                                                        style: TextStyle(
-                                                            color:
-                                                                mediumGreen,
-                                                            fontSize: 18),
-                                                      ),
-                                                    ),
-                                                  ),
+                                                      padding: const EdgeInsets
+                                                          .fromLTRB(
+                                                          0, 25, 0, 5),
+                                                      child: OutlinedButton(
+                                                        style: OutlinedButton
+                                                            .styleFrom(
+                                                          side: const BorderSide(
+                                                              color:
+                                                                  mediumGreen,
+                                                              width:
+                                                                  2.0), // Define a borda
+                                                          padding: const EdgeInsets
+                                                              .fromLTRB(
+                                                              140,
+                                                              10,
+                                                              140,
+                                                              10), // Define o espaçamento interno
+                                                        ),
+                                                        onPressed: () {
+                                                          Navigator.pop(
+                                                              context); // Isso vai fechar o modal
+                                                        },
+                                                        child: const Text(
+                                                          'Entendi',
+                                                          style: TextStyle(
+                                                            color: mediumGreen,
+                                                            fontSize: 18,
+                                                          ),
+                                                        ),
+                                                      )),
                                                   // Botão para exposicão
                                                   ElevatedButton(
-                                                    style: ButtonStyle(
-                                                        backgroundColor:
-                                                            MaterialStateProperty.all(mediumGreen),
-                                                        padding:
-                                                            MaterialStateProperty.all(
-                                                                const EdgeInsets.fromLTRB(60,10,60,10))),
                                                     onPressed: () async {
                                                       final Uri url = Uri.parse(
-                                                          dataCardExpoMuseu
-                                                              .maisInfoCardExpo);
+                                                          dataCardExpoMuseu.maisInfoCardExpo);
                                                       if (await canLaunchUrl(
                                                           url)) {
                                                         await launchUrl(url);
@@ -201,20 +197,29 @@ class CardExpoMuseu extends StatelessWidget {
                                                         throw 'Could not launch $url';
                                                       }
                                                     },
+                                                    style: ElevatedButton
+                                                        .styleFrom(
+                                                      backgroundColor:
+                                                          mediumGreen,
+                                                      padding: const EdgeInsets
+                                                          .fromLTRB(
+                                                          60, 10, 60, 10),
+                                                    ),
                                                     child: const Text(
                                                       'Visitar página da exposição',
                                                       style: TextStyle(
-                                                          color: Colors.white,
-                                                          fontSize: 18),
+                                                        color: Colors.white,
+                                                        fontSize: 18,
+                                                      ),
                                                     ),
-                                                  ),
+                                                  )
                                                 ],
                                               )),
                                         );
                                       },
                                     );
                                   },
-                  
+
                                   //BOTÃO SAIBA MAIS QUE PUXA O MODAL
                                   child: const Align(
                                     alignment: AlignmentDirectional.bottomEnd,

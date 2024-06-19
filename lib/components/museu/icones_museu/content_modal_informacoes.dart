@@ -1,3 +1,4 @@
+import 'package:conecta_app/components/entendi_button.dart';
 import 'package:conecta_app/models/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -6,15 +7,15 @@ class ContentModalInformacoes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return const SizedBox(
       height: 650,
       width: double.infinity,
       child: SingleChildScrollView(
         child: Padding(
-            padding: const EdgeInsets.fromLTRB(15, 30, 15, 30),
+            padding: EdgeInsets.fromLTRB(15, 30, 15, 30),
             child: Column(
               children: [
-                const Text(
+                Text(
                   "Informacoes:",
                   style: TextStyle(
                     color: darkGreen,
@@ -22,9 +23,9 @@ class ContentModalInformacoes extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const Padding(
+                Padding(
                   padding: EdgeInsets.all(10),
-                  child:Column(
+                  child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text(
@@ -80,21 +81,8 @@ class ContentModalInformacoes extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 20, 0, 40),
-                  child: ElevatedButton(
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(mediumGreen),
-                        padding: MaterialStateProperty.all(
-                            const EdgeInsets.fromLTRB(40, 10, 40, 10))),
-                    onPressed: () {
-                      Navigator.pop(context); // Isso vai fechar o BottomSheet
-                    },
-                    child: const Text(
-                      'Entendi',
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                  ),
-                ),
+                    padding: EdgeInsets.fromLTRB(0, 20, 0, 40),
+                    child: EntendiButton()),
               ],
             )),
       ),
