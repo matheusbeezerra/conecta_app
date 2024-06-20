@@ -38,12 +38,12 @@ class CampusPage extends StatelessWidget {
                   child: Column(
                     children: [
                       Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 160, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(0, 200, 0, 0),
                           // NOME DO CAMPUS
                           child: Text(dataCampus.campus,
                               textAlign: TextAlign.center,
                               style: const TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 30,
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold))),
                       //ENDEREÇO DO CAMPUS

@@ -22,6 +22,9 @@ class ItemProdutoFundaj extends StatelessWidget {
             case 'PIBIC':
               _launchURL(context, 'https://www.gov.br/fundaj/pt-br/composicao/dipes-1/pibic');
               break;
+            case 'Cinemateca':
+              _launchURL(context, 'https://cinematecapernambucana.com.br/');
+              break;
             case 'Pesquisa\nEscolar':
               _launchURL(context, 'https://pesquisaescolar.fundaj.gov.br/pt-br/');
               break;
