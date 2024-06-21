@@ -125,6 +125,12 @@ flutter:
      - assets/muhne/expo_presenca_aloisio.png
 
 
+     #MODAL DIFOR MUSEU
+     - assets/svg/icones_difor/icone_ava.svg
+     - assets/svg/icones_difor/icone_editais.svg
+     - assets/svg/icones_difor/icone_contato.svg
+
+
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

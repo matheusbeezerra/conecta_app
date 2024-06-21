@@ -1,3 +1,4 @@
+import 'package:conecta_app/models/colors.dart';
 import 'package:flutter/material.dart';
 
 class MoviePageScreen extends StatelessWidget {
@@ -125,32 +126,26 @@ class MoviePageScreen extends StatelessWidget {
                 children: currentSessions
                     .map((session) => Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: OutlinedButton(
-                              onPressed: () {},
-                              style: ButtonStyle(
-                                foregroundColor:
-                                    MaterialStateProperty.all<Color>(
-                                  const Color.fromARGB(255, 26, 77, 28),
-                                ),
-                                shape: MaterialStateProperty.all<
-                                    RoundedRectangleBorder>(
-                                  RoundedRectangleBorder(
+                              padding: const EdgeInsets.all(8.0),
+                              child: OutlinedButton(
+                                onPressed: () {},
+                                style: OutlinedButton.styleFrom(
+                                  backgroundColor:
+                                      darkGreen, // Define a cor do texto
+                                  side: const BorderSide(
+                                      color: darkGreen), // Define a borda
+                                  shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(18.0),
-                                    side: const BorderSide(
-                                        color: Color.fromARGB(255, 26, 77, 28)),
                                   ),
                                 ),
-                              ),
-                              child: Text(
-                                session,
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
+                                child: Text(
+                                  session,
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                  ),
                                 ),
-                              ),
-                            ),
-                          ),
+                              )),
                         ))
                     .toList(),
               ),

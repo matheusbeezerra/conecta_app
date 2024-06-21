@@ -1,25 +1,23 @@
+import 'package:conecta_app/models/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:conecta_app/models/museu/data_icone_museu.dart';
-import 'package:conecta_app/models/colors.dart';
 
-class IconeComoChegar extends StatelessWidget {
-  const IconeComoChegar({super.key});
+class IconeAvaDifor extends StatelessWidget {
+  const IconeAvaDifor({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey =
-        GlobalKey<ScaffoldMessengerState>();
+    final scaffoldMessenger = ScaffoldMessenger.of(context);
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(6, 0, 6, 0),
       child: GestureDetector(
         onTap: () async {
-          final Uri url = Uri.parse(dataIconeMuseu[0].link);
+          final Uri url = Uri.parse("https://ava.fundaj.gov.br/");
           if (!await launchUrl(url)) {
-            // Em caso de erro, exibe a snackbar avisando que não foi possível abrir o URL
-            scaffoldMessengerKey.currentState?.showSnackBar(
+            // Em caso de erro, ele sobe a snackbar avisando que não poderá abrir o url
+            scaffoldMessenger.showSnackBar(
               SnackBar(
                 content: Text('Não foi possível abrir $url'),
               ),
@@ -29,17 +27,17 @@ class IconeComoChegar extends StatelessWidget {
         child: Column(
           children: [
             SvgPicture.asset(
-              dataIconeMuseu[0].imageAsset,
+              "assets/svg/icones_difor/icone_ava.svg",
               height: 60,
               fit: BoxFit.cover,
             ),
             const SizedBox(
               height: 10,
             ),
-            Text(
-              dataIconeMuseu[0].nomeIcone,
+            const Text(
+              "AVA",
               textAlign: TextAlign.center,
-              style: const TextStyle(
+              style: TextStyle(
                 color: darkGray,
                 fontSize: 16,
               ),
