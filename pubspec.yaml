@@ -83,8 +83,15 @@ flutter:
      - assets/svg/filme_9.jpeg
      - assets/svg/filme_10.jpeg
 
+     #ICONES BOTTOM NAVIGATOR
+     - assets/svg/bottom_navigator_bar/icone_noticias.svg
+     - assets/svg/bottom_navigator_bar/home_outlined.svg
+     - assets/svg/bottom_navigator_bar/icone_govbr.svg   
+     - assets/svg/bottom_navigator_bar/icone_home.svg
+     
      #HOME HEADER
      - assets/home/header/imgBackHome1.png
+
      #HOME CARROSSEL
      - assets/home/carrossel/campusGilbertoFreyre.png
      - assets/home/carrossel/campusAnisioTeixeira.png

@@ -80,7 +80,8 @@ class CardCampus extends StatelessWidget {
                             color: Colors.white,
                           )),
                     ]),
-                  ]),
+                  ]
+                  ),
             ),
           ),
         ]),
