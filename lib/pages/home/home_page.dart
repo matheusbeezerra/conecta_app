@@ -1,4 +1,4 @@
-
+import 'package:conecta_app/components/bottom_navigator/bottom_navigation_home.dart';
 import 'package:conecta_app/components/home/carrossel/carrossel_campus.dart';
 import 'package:conecta_app/components/home/carrossel/text_explore.dart';
 import 'package:conecta_app/components/home/header/back_header.dart';
@@ -16,6 +16,7 @@ class HomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Conecta Fundaj',
       home: Scaffold(
+        backgroundColor: Colors.white,
         body: SingleChildScrollView(
           child: Column(
             children: [
@@ -27,18 +28,17 @@ class HomePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                          padding: EdgeInsets.fromLTRB(24, 0, 0, 0),
+                          padding: EdgeInsets.fromLTRB(28, 0, 0, 0),
                           child: TextHeader()),
                       Padding(
-                          padding: EdgeInsets.fromLTRB(24, 0, 0, 0),
+                          padding: EdgeInsets.fromLTRB(28, 0, 0, 0),
                           child: TextExploreCampus()),
                       CarrosselHeader(),
                       Padding(
-                          padding: EdgeInsets.fromLTRB(24, 8, 0, 0),
+                          padding: EdgeInsets.fromLTRB(28, 8, 0, 0),
                           child: TextExplorePossibilidades()),
-                     Padding(
-                        padding:EdgeInsets.all(4),
-                        child:  ProdutosFundaj()),
+                      Padding(
+                          padding: EdgeInsets.all(4), child: ProdutosFundaj()),
                       SizedBox(
                         height: 60,
                       )
@@ -49,11 +49,12 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+         bottomNavigationBar: SizedBox(
+          height: 80,
+          child: BottomNavigationBarHome()
+           
+        ),
       ),
     );
   }
-}
-
-class TextPossibilidades {
-  const TextPossibilidades();
 }
