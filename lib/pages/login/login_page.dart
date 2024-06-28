@@ -13,14 +13,35 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    void signUserIn(BuildContext context) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => const HomePage()
-         ),
-      );
-    }
+void signUserIn(BuildContext context) {
+  String username = usernameController.text;
+  String password = passwordController.text;
+  if (username == 'admin' && password == '1234') {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const HomePage()),
+    );
+  } else {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Row(
+          children: [
+            Icon(Icons.error, color: Colors.white),
+            SizedBox(width: 10), 
+            Expanded(
+              child: Text(
+                "Você não é um animal, digite corretamente!",
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+          ],
+        ),
+        backgroundColor: Colors.red,
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+}
 
     return Scaffold(
       backgroundColor: const Color(0xFFFFFFFF),
@@ -106,20 +127,16 @@ class LoginPage extends StatelessWidget {
                     const SizedBox(height: 30),
                     ElevatedButton.icon(
                       onPressed: () {},
-                      icon: const Icon(Icons.account_circle_rounded,
-                          size: 30),
+                      icon: const Icon(Icons.account_circle_rounded, size: 30),
                       label: const Text("Entrar usando minha conta Google",
-                          style: TextStyle(
-                              fontSize: 16
-                              )
-                          ),
+                          style: TextStyle(fontSize: 16)),
                       style: ElevatedButton.styleFrom(
                         foregroundColor: const Color.fromARGB(255, 26, 77, 28),
                         backgroundColor:
                             const Color.fromARGB(255, 184, 219, 178),
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 25,
-                            vertical:10,
+                          horizontal: 25,
+                          vertical: 10,
                         ),
                       ),
                     ),

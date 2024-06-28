@@ -27,7 +27,7 @@ class HomeCinemaPage extends StatefulWidget {
 class _HomeCinemaPageState extends State<HomeCinemaPage>
     with SingleTickerProviderStateMixin {
   String _selectedCategory = 'Derby';
-  late AnimationController _animationController;
+  AnimationController? _animationController;
   late Animation<Offset> _offsetAnimation;
 
   final List<String> _derbyMovies = [
@@ -83,18 +83,18 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
       begin: const Offset(-1, 0),
       end: const Offset(0, 0),
     ).animate(CurvedAnimation(
-      parent: _animationController,
+      parent: _animationController!,
       curve: Curves.easeInOut,
     ));
     setState(() {
       _selectedCategory = 'Derby';
-      _animationController.forward(from: 0.0);
+      _animationController!.forward(from: 0.0);
     });
   }
 
   @override
   void dispose() {
-    _animationController.dispose();
+    _animationController!.dispose();
     super.dispose();
   }
 
@@ -104,7 +104,7 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
 
     if (_selectedCategory == 'Derby') {
       currentMovies = _derbyMovies;
-    } else if (_selectedCategory == 'Museu') {
+    } else if (_selectedCategory == 'Casa Forte') {
       currentMovies = _museuMovies;
     } else if (_selectedCategory == 'Porto') {
       currentMovies = _portoMovies;
@@ -120,7 +120,7 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
               width: double.infinity,
             ),
             Positioned(
-              left: 40,
+              left: 50,
               top: 30,
               child: SvgPicture.asset(
                 'assets/svg/logo-cinema.svg',
@@ -130,13 +130,54 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
             ),
           ],
         ),
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+        ),
         actions: <Widget>[
-          IconButton(
-            icon: const Icon(
-              Icons.more_vert_rounded,
-              color: Colors.white,
-            ),
-            onPressed: () {},
+          PopupMenuButton<String>(
+            itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+              const PopupMenuItem<String>(
+                value: 'pagina1',
+                child: Text('Sobre'),
+              ),
+              const PopupMenuItem<String>(
+                value: 'pagina2',
+                child: Text('Filmes em cartaz'),
+              ),
+              const PopupMenuItem<String>(
+                value: 'pagina3',
+                child: Text('Programação'),
+              ),
+              const PopupMenuItem<String>(
+                value: 'pagina4',
+                child: Text('Sessões especiais'),
+              ),
+              const PopupMenuItem<String>(
+                value: 'pagina5',
+                child: Text('Acessibilidade'),
+              ),
+              const PopupMenuItem<String>(
+                value: 'pagina6',
+                child: Text('Localização'),
+              ),
+            ],
+            onSelected: (String value) {
+              switch (value) {
+                case 'pagina1':
+                  // Adicione aqui a navegação para a página 1
+                  break;
+                case 'pagina2':
+                  break;
+                case 'pagina3':
+                  break;
+                case 'pagina4':
+                  break;
+                case 'pagina5':
+                  break;
+                case 'pagina6':
+                  break;
+              }
+            },
           ),
         ],
       ),
@@ -159,21 +200,21 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
                     onTap: () {
                       setState(() {
                         _selectedCategory = 'Derby';
-                        _animationController.forward(from: 0.0);
+                        _animationController!.forward(from: 0.0);
                       });
                     },
                   ),
                   CategoryCard(
-                    icon: _selectedCategory == 'Museu'
+                    icon: _selectedCategory == 'Casa Forte'
                         ? Icons.place_rounded
                         : Icons.place_outlined,
-                    title: 'Museu',
+                    title: 'Casa Forte',
                     address: 'Av. 17 de Agosto, 2187 - Casa Forte',
                     isSelected: _selectedCategory == 'Museu',
                     onTap: () {
                       setState(() {
                         _selectedCategory = 'Museu';
-                        _animationController.forward(from: 0.0);
+                        _animationController!.forward(from: 0.0);
                       });
                     },
                   ),
@@ -187,7 +228,7 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
                     onTap: () {
                       setState(() {
                         _selectedCategory = 'Porto';
-                        _animationController.forward(from: 0.0);
+                        _animationController!.forward(from: 0.0);
                       });
                     },
                   ),
