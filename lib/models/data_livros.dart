@@ -10,6 +10,12 @@ const livrosList = [
     imageAsset: 'assets/editora/capaLivros/CompetênciaseHabilidades.png', 
     verMais: 'Ver Mais',
     url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/competencias-e-habilidades-para-uma-educacao-3-0.pdf',
+    numeroPaginas:'268 páginas',
+    edicao:'-',
+    genero:'Educação; Pedagogia',
+    isbn:'978-65-5737-025-4',
+  
+  
   ),
     Livros(
     id: '2', 
@@ -20,6 +26,11 @@ const livrosList = [
     imageAsset: 'assets/editora/capaLivros/CirandaPernambucana.png', 
     verMais: 'Ver Mais',
     url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/ciranda-pernambucana.pdf',
+    numeroPaginas:'94 páginas',
+    edicao:'-',
+    genero:'Literatura Infantojuvenil; Poesia',
+    isbn:'978-65-5737-036-0',
+  
   ),
     Livros(
     id: '3', 
@@ -30,6 +41,10 @@ const livrosList = [
     imageAsset: 'assets/editora/capaLivros/CulturaVivaDoNordeste.png', 
     verMais: 'Ver Mais',
     url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/cultura-viva-do-nordeste.pdf',
+    numeroPaginas:'252 páginas',
+    edicao:'-',
+    genero:'Cultura; Jornalismo; Nordeste',
+    isbn:'978-65-5737-016-2',
   ),
   Livros(
     id: '4', 
@@ -40,6 +55,10 @@ const livrosList = [
     imageAsset: 'assets/editora/capaLivros/GilbertoFreyre&aEducação.png', 
     verMais: 'Ver Mais',
     url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/gilberto-freyre-a-educacao-digital.pdf',
+    numeroPaginas:'152 páginas',
+    edicao:'-',
+    genero:'Educação',
+    isbn:'978-65-5737-029-2',
   ),
   Livros(
     id: '5', 
@@ -50,5 +69,9 @@ const livrosList = [
     imageAsset: 'assets/editora/capaLivros/ASudeneeseuInventor.png', 
     verMais: 'Ver Mais',
     url: 'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste/livros-pdf/a-sudene-e-seu-inventor.pdf',
+    numeroPaginas:'112 páginas',
+    edicao:'',
+    genero:'História; Jornalismo',
+    isbn:'978-65-5737-037-7',
   ),
 ];

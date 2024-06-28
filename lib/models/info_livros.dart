@@ -9,6 +9,10 @@ class Livros {
   final String autor;
   final String verMais;
   final String url;
+  final String numeroPaginas;
+  final String edicao;
+  final String genero;
+  final String isbn;
 
   // O construtor deve ser assim:
   const Livros({
@@ -20,7 +24,10 @@ class Livros {
     required this.autor,
     required this.verMais,
     required this.url,
-    
+    required this.numeroPaginas,
+    required this.edicao,
+    required this.genero,
+    required this.isbn,
   });
 
 }

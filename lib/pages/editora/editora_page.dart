@@ -1,60 +1,82 @@
 import 'package:conecta_app/components/editora/editora_capa.dart';
 import 'package:conecta_app/pages/editora/livros_list.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class EditoraPage extends StatelessWidget {
   const EditoraPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget  build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          const SliverAppBar(
-            iconTheme: IconThemeData(color: Colors.white),
+          SliverAppBar(
+            iconTheme: const IconThemeData(color: Colors.white),
             stretchTriggerOffset: 400.0,
             expandedHeight: 100.0,
             toolbarHeight: 100.0,
             title: Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-              child: Text(
-                'EDITORA \nMASSANGANA',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 23.0,
-                  color: Colors.white,
-                ),
-              ), //Aqui tu bota a logo
+              padding: const EdgeInsets.all(0.0), // Remove unnecessary padding
+              child: SvgPicture.asset(
+                'assets/svg/Editora/nameEditora.svg',
+                height: 40,
+                fit: BoxFit.cover,
+              ),
+
             ),
             pinned: false,
-            flexibleSpace: FlexibleSpaceBar(
-              background: EditoraCapa(), // Aqui tu bota o plano de fundo
+            flexibleSpace: const FlexibleSpaceBar(
+              background: EditoraCapa(),
             ),
           ),
           SliverToBoxAdapter(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-              const Padding(
-                padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
-                child: Text(
-                  'Lançamentos',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 23.0,
-                    color: Color(0xFF01241B),
-                  ),
-                ), //Aqui tu bota a logo
+  child: Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      Padding(
+        padding: const EdgeInsets.fromLTRB(20, 20, 0, 20),
+        child: Row(
+          children: [
+            const Padding(
+              padding: EdgeInsets.only(right: 75.0), // Adicionando margem à direita do primeiro texto
+              child: Text(
+                'Lançamentos',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 23.0,
+                  color: Color(0xFF01241B),
+                ),
               ),
-                SizedBox(
-                // Defina uma altura para o container que envolve o BookList
-                height: MediaQuery.of(context).size.height - 200, // Ajuste a altura conforme necessário
-                child: const BookList(),
-              ),]
             ),
-          ),
+            InkWell(
+              onTap: () => launchUrl(Uri.parse('https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste')),
+              // mouseCursor: WidgetStateMouseCursor.clickable,
+              child: const Text(
+                'Ir para página da Editora',
+                style: TextStyle(
+                  color: Colors.blue,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+
+          SizedBox(
+            height: MediaQuery.of(context).size.height -200,
+            child: const BookList(),
+            ), 
+        ],
+      ),
+    ),
         ],
       ),
     );
   }
 }
+
+
+
+

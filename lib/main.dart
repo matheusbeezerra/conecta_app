@@ -22,10 +22,6 @@ class MyApp extends StatelessWidget {
           elevation: 0.0,
       )),
         home: const CarouselPageOne(),
-        routes: {
-          AppRoutes.EDITORA_PAGE: (ctx) => const EditoraPage(),
-          // AppRoutes.LIVROS_DETAILS: (ctx) => LivrosDetails(),
-        },
         debugShowCheckedModeBanner: false,
     );
   }

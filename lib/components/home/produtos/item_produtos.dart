@@ -1,4 +1,3 @@
-
 import 'package:conecta_app/models/colors.dart';
 import 'package:conecta_app/models/info_produtos.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +26,7 @@ class ItemProdutoFundaj extends StatelessWidget {
                 border: Border.all(
                     width: 2,
                     color: lightGray,
-                   )
+                  )
                 ),
             child: Image.asset(produtosFundaj.imgProduto),
           ),

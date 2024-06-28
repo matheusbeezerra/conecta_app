@@ -7,6 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 class BookList extends StatelessWidget {
   const BookList({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -83,29 +84,19 @@ class BookList extends StatelessWidget {
                       child: TextButton.icon(
                           //Rota do botão
 
-
-                          // onPressed: () async {
-                          //   // Open the link in a web browser
-                          //   if (await canLaunchUrl(Uri.parse(livros.download))) {
-                          //     await launchUrl(Uri.parse(livros.download));
-                          //   }
-                          // },
-
                         onPressed: () async {
                           final Uri url = Uri.parse(livros.url);
                             if (!await launchUrl(url)) {
                               throw Exception('Could not launch $url');
                             }
                         },
-
-
-                        
+              
                           style: ElevatedButton.styleFrom(
                             padding: const EdgeInsets.fromLTRB(1, 0, 0, 0),
                           ),
                           icon: const Icon(Icons.download,
                               size: 22, color: Color(0xFF0F3834),),
-                          label: const Text("Download",
+                          label: const Text("Baixar",
                               style: TextStyle(
                                   color: Color(0xFF0F3834),
                                   fontWeight: FontWeight.bold))),

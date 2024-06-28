@@ -1,6 +1,5 @@
 import 'package:conecta_app/components/home/produtos/item_produtos.dart';
 import 'package:conecta_app/models/data_produtos.dart';
-import 'package:conecta_app/pages/cinema/home_cinema.dart';
 import 'package:conecta_app/pages/editora/editora_page.dart';
 import 'package:flutter/material.dart';
 
