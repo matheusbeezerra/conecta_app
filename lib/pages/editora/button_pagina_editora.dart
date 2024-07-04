@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:conecta_app/models/colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ButtonPageEditora extends StatelessWidget {
@@ -12,6 +11,7 @@ class ButtonPageEditora extends StatelessWidget {
         children: [
           ElevatedButton.icon(
               onPressed: () async {
+                // ignore: prefer_typing_uninitialized_variables
                 var livros;
                 Uri.parse(
                     livros.url); // Assuming download URL is in livros.download
