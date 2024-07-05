@@ -110,8 +110,10 @@ class ItemProdutoFundaj extends StatelessWidget {
   // Função para tentar lançar o URL
   void _launchURL(BuildContext context, String url) {
     final scaffoldMessenger = ScaffoldMessenger.of(context);
+    // ignore: deprecated_member_use
     launcher.canLaunch(url).then((canLaunch) {
       if (canLaunch) {
+        // ignore: deprecated_member_use
         launcher.launch(url);
       } else {
         scaffoldMessenger.showSnackBar(
