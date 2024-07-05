@@ -1,4 +1,5 @@
 import 'package:conecta_app/models/produtos/info_produtos.dart';
+import 'package:conecta_app/pages/editora/editora_home.dart';
 import 'package:conecta_app/pages/home/home_page.dart';
 import 'package:conecta_app/pages/museu/muhne_page.dart';
 
@@ -23,7 +24,7 @@ const dataProdutos = [
   DataProdutos(
     produto: 'Editora',
     imgProduto:'assets/home/produtos/imgEditora.png',
-    endProduto:HomePage()
+    endProduto:EditoraPage()
   ),
   DataProdutos(
     produto: 'Formação',
