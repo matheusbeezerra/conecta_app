@@ -79,6 +79,7 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
       vsync: this,
       duration: const Duration(milliseconds: 500),
     );
+    // ignore: non_constant_identifier_names, prefer_typing_uninitialized_variables
     var Curves;
     _offsetAnimation = Tween<Offset>(
       begin: const Offset(-1, 0),

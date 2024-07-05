@@ -5,10 +5,10 @@ class EditoraCapa extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SingleChildScrollView(
-        child: Text('data teste'),
-      ),
+    return Image.asset(
+      'assets/editora/imgEditora.png',
+        width: MediaQuery.of(context).size.width,
+        fit: BoxFit.fill, //
     );
   }
 }
