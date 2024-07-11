@@ -1,4 +1,6 @@
 import 'package:conecta_app/pages/cinema/movie_cinema.dart';
+import 'package:conecta_app/pages/cinema/programacao_screen.dart';
+import 'package:conecta_app/pages/museu/muhne_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -79,8 +81,7 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
       vsync: this,
       duration: const Duration(milliseconds: 500),
     );
-    // ignore: non_constant_identifier_names, prefer_typing_uninitialized_variables
-    var Curves;
+
     _offsetAnimation = Tween<Offset>(
       begin: const Offset(-1, 0),
       end: const Offset(0, 0),
@@ -138,6 +139,19 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
         actions: <Widget>[
           PopupMenuButton<String>(
             itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+              PopupMenuItem<String>(
+                value: 'logo',
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: SvgPicture.asset(
+                      'assets/svg/logo-cinema.svg',
+                      width: 50,
+                      height: 50,
+                      color: Colors.black,
+                    ),
+                  ),
+              ),
+              const PopupMenuDivider(),
               const PopupMenuItem<String>(
                 value: 'pagina1',
                 child: Text('Sobre'),
@@ -166,17 +180,28 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
             onSelected: (String value) {
               switch (value) {
                 case 'pagina1':
-                  // Adicione aqui a navegação para a página 1
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MuseuPage()),
+                  );
                   break;
                 case 'pagina2':
+                  // Implemente a navegação para a página de filmes em cartaz
                   break;
                 case 'pagina3':
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ProgramacaoScreen()),
+                  );
                   break;
                 case 'pagina4':
+                  // Implemente a navegação para a página de sessões especiais
                   break;
                 case 'pagina5':
+                  // Implemente a navegação para a página de acessibilidade
                   break;
                 case 'pagina6':
+                  // Implemente a navegação para a página de localização
                   break;
               }
             },
