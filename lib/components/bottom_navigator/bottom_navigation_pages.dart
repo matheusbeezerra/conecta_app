@@ -1,4 +1,5 @@
 import 'package:conecta_app/models/colors.dart';
+import 'package:conecta_app/pages/home/home_page.dart';
 import 'package:conecta_app/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -13,17 +14,23 @@ class BottomNavigationBarPages extends StatelessWidget {
     return BottomNavigationBar(
       backgroundColor: darkGreen,
       type: BottomNavigationBarType.fixed,
-      items: [ 
+      items: [
         BottomNavigationBarItem(
           icon: GestureDetector(
-              child: ColorFiltered(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const HomePage()),
+              );
+            },
+            child: ColorFiltered(
               colorFilter: const ColorFilter.mode(mediumGreen, BlendMode.srcIn),
               child: SvgPicture.asset(
                 'assets/svg/bottom_navigator_bar/home_outlined.svg',
                 height: 26,
               ),
             ),
-              ),
+          ),
           label: "Home",
         ),
         BottomNavigationBarItem(
@@ -38,7 +45,7 @@ class BottomNavigationBarPages extends StatelessWidget {
                   throw 'Não foi possível abrir as Notícias';
                 }
               },
-              child:const  Icon(
+              child: const Icon(
                 Icons.newspaper_outlined,
                 size: 28,
               )),
@@ -70,14 +77,14 @@ class BottomNavigationBarPages extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (context) => LoginPage()),
                   ),
-              child:const Icon(
+              child: const Icon(
                 Icons.logout_outlined,
                 size: 28,
               )),
           label: "sair",
         ),
       ],
-       
+
       unselectedItemColor: mediumGreen, // Cor do texto não selecionado
       selectedItemColor: mediumGreen, // Cor do texto selecionado
       showSelectedLabels: true, // Mostra labels selecionadas
