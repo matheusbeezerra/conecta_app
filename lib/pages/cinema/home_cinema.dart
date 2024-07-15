@@ -147,6 +147,7 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
                       'assets/svg/logo-cinema.svg',
                       width: 50,
                       height: 50,
+                      // ignore: deprecated_member_use
                       color: Colors.black,
                     ),
                   ),
@@ -182,7 +183,7 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
                 case 'pagina1':
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MuseuPage()),
+                    MaterialPageRoute(builder: (context) => const MuseuPage()),
                   );
                   break;
                 case 'pagina2':
@@ -191,7 +192,7 @@ class _HomeCinemaPageState extends State<HomeCinemaPage>
                 case 'pagina3':
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => ProgramacaoScreen()),
+                    MaterialPageRoute(builder: (context) => const ProgramacaoScreen()),
                   );
                   break;
                 case 'pagina4':
