@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ProgramacaoScreen extends StatelessWidget {
+  const ProgramacaoScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -170,7 +172,7 @@ class ProgramacaoScreen extends StatelessWidget {
               top: 8,
               right: 8,
               child: IconButton(
-                icon: Icon(Icons.share),
+                icon: const Icon(Icons.share),
                 onPressed: () {
                   
                 },
