@@ -41,8 +41,7 @@ class EditoraPage extends StatelessWidget {
                     children: [
                       const Padding(
                         padding: EdgeInsets.only(
-                            right:
-                                75.0), // Adicionando margem à direita do primeiro texto
+                            right: 110), // Adicionando margem à direita do primeiro texto
                         child: Text(
                           'Lançamentos',
                           style: TextStyle(
@@ -57,7 +56,7 @@ class EditoraPage extends StatelessWidget {
                             'https://www.gov.br/fundaj/pt-br/composicao/dimeca-1/editora-teste')),
                         // mouseCursor: WidgetStateMouseCursor.clickable,
                         child: const Text(
-                          'Ir para página da Editora',
+                          'Visitar Portal',
                           style: TextStyle(
                             color: Color(0xFF738379),
                           ),
@@ -66,6 +65,9 @@ class EditoraPage extends StatelessWidget {
                     ],
                   ),
                 ),
+                //   const SizedBox(
+                //   child: ListWidget(), // cards
+                // ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height - 275,
                   child: const BookList(), // cards
