@@ -35,7 +35,10 @@ class LivroDetails extends StatelessWidget {
                 ),
               ),
             ),
-            const Divider(), // Linha abaixo do título
+          const Divider(
+            indent: 20,
+            endIndent: 20,
+          ), // Linha abaixo do título
 
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -60,7 +63,7 @@ class LivroDetails extends StatelessWidget {
             ),
 
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(15),
               child: Text(
                 livros.descricao,
                 textAlign: TextAlign.justify,
@@ -93,12 +96,13 @@ class LivroDetails extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF738379),
                 shadowColor: Colors.white,
-                padding: const EdgeInsets.fromLTRB(130.0, 0, 130.0, 0),
+                padding: const EdgeInsets.fromLTRB(120.0, 0, 120.0, 0),
               ),
             ),
 
             SizedBox(
               height: 200,
+              width: 370,
               child: InfoDetails(
                 numeroPaginas: livros.numeroPaginas,
                 edicao: livros.edicao,
