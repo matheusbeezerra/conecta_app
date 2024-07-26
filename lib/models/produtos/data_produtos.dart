@@ -1,4 +1,8 @@
 import 'package:conecta_app/models/produtos/info_produtos.dart';
+<<<<<<< HEAD
+=======
+import 'package:conecta_app/pages/cinema/home_cinema.dart';
+>>>>>>> b5ee5007b84aaf8295e2dbd7ad04c1ae5c8ba5a5
 import 'package:conecta_app/pages/editora/editora_home.dart';
 import 'package:conecta_app/pages/home/home_page.dart';
 import 'package:conecta_app/pages/museu/muhne_page.dart';
@@ -14,7 +18,7 @@ const dataProdutos = [
   DataProdutos(
     produto: 'Cinema',
     imgProduto:'assets/home/produtos/imgCinema.png',
-    endProduto:HomePage()
+    endProduto:HomeCinemaPage()
   ),
   DataProdutos(
     produto: 'Cinemateca',

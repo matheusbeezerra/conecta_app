@@ -126,16 +126,16 @@ class MoviePageScreen extends StatelessWidget {
                 children: currentSessions
                     .map((session) => Expanded(
                           child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(6.0),
                               child: OutlinedButton(
                                 onPressed: () {},
                                 style: OutlinedButton.styleFrom(
                                   backgroundColor:
-                                      darkGreen, // Define a cor do texto
+                                      lightGray, // Define a cor do texto
                                   side: const BorderSide(
                                       color: darkGreen), // Define a borda
                                   shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
+                                    borderRadius: BorderRadius.circular(14.0),
                                   ),
                                 ),
                                 child: Text(
@@ -143,6 +143,7 @@ class MoviePageScreen extends StatelessWidget {
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 13,
+                                    color: darkGreen
                                   ),
                                 ),
                               )),
