@@ -87,7 +87,7 @@ class InfoDetails extends StatelessWidget {
                 const SizedBox(height: 8,),
                 const Icon(Icons.photo_library, color: Color(0xFF738379),),
                 const SizedBox(height: 8,),
-                Text(genero),
+                Text(genero, textAlign: TextAlign.center,),
               ],
             ),
           ),
