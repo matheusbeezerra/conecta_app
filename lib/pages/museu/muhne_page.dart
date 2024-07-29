@@ -1,5 +1,4 @@
 import 'package:conecta_app/components/bottom_navigator/bottom_navigation_pages.dart';
-import 'package:conecta_app/components/museu/cards_exposicoes/carrossel_expo.dart';
 import 'package:conecta_app/components/museu/exposicoes_virtuais/produtos/grid_expo_museu.dart';
 import 'package:conecta_app/components/museu/exposicoes_virtuais/produtos/text_expo.dart';
 import 'package:conecta_app/components/museu/icones_museu/icone_como_chegar.dart';
@@ -39,7 +38,7 @@ class MuseuPage extends StatelessWidget {
               const Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
+                    padding: EdgeInsets.fromLTRB(0, 30, 0, 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment
                           .spaceAround, // Centralizes horizontally
@@ -65,10 +64,7 @@ class MuseuPage extends StatelessWidget {
                     child:
                         GridExpoMuseu(), //cards com as exposicões virtuais do museu
                   ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 0, 40),
-                    child: CarrosselExpoMuseu(), //carrossel com  as
-                  ),
+                 
                 ],
               ),
             ]),

@@ -18,7 +18,7 @@ class EntendiButton extends StatelessWidget {
           backgroundColor: mediumGreen,
         ),
         child:  const Padding(
-          padding: EdgeInsets.fromLTRB(20, 10,20,10),
+          padding: EdgeInsets.fromLTRB(30,15,30,15),
           child: Text(
             'Entendi',
             style: TextStyle(color: Colors.white),
