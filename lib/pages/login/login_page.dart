@@ -14,35 +14,39 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-void signUserIn(BuildContext context) {
-  String username = usernameController.text;
-  String password = passwordController.text;
-  if (username == 'admin' && password == '1234') {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const HomePage()),
-    );
-  } else {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Row(
-          children: [
-            Icon(Icons.error, color: Colors.white),
-            SizedBox(width: 10), 
-            Expanded(
-              child: Text(
-                "Você não é um animal, digite corretamente!",
-                overflow: TextOverflow.ellipsis,
-              ),
+    void signUserIn(BuildContext context) async {
+      String email = usernameController.text;
+      String password = passwordController.text;
+
+      try {
+        // final response = await apiService.loginUser(email, password);
+        // Aqui você pode salvar o token de autenticação ou qualquer outra coisa necessária
+
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const HomePage()),
+        );
+      } catch (e) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Row(
+              children: [
+                const Icon(Icons.error, color: Colors.white),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    "Erro ao fazer login: ${e.toString()}",
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
-        backgroundColor: Colors.red,
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
-  }
-}
+            backgroundColor: Colors.red,
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      }
+    }
 
     return Scaffold(
       backgroundColor: const Color(0xFFFFFFFF),
@@ -133,7 +137,7 @@ void signUserIn(BuildContext context) {
                           style: TextStyle(fontSize: 16)),
                       style: ElevatedButton.styleFrom(
                         foregroundColor: Colors.white,
-                        backgroundColor:mediumGreen,
+                        backgroundColor: mediumGreen,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 25,
                           vertical: 10,
@@ -156,7 +160,7 @@ void signUserIn(BuildContext context) {
                           Text(
                             'Ainda não possui conta? Crie uma.',
                             style: TextStyle(
-                              color:darkGreen,
+                              color: darkGreen,
                               fontSize: 13,
                             ),
                           ),
