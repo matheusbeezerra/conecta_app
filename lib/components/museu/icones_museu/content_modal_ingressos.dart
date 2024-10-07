@@ -10,23 +10,27 @@ class ContentModalIngressos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      height: 650,
+      height: 700,
       width: double.infinity,
-      child: SingleChildScrollView(
-        child: Padding(
-            padding: EdgeInsets.fromLTRB(15, 30, 15, 30),
-            child: Column(
-              children: [
-                Text(
-                  "Ingressos:",
-                  style: TextStyle(
-                    color: darkGreen,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+      child: Padding(
+          padding: EdgeInsets.fromLTRB(15, 30, 15, 30),
+          child: Column(
+            children: [
+              Text(
+                "Ingressos:",
+                style: TextStyle(
+                  color: darkGreen,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
                 ),
-                Padding(
-                  padding: EdgeInsets.all(10),
+              ),
+              SizedBox( 
+                height: 300,
+                child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Padding(
+                  padding: EdgeInsets.fromLTRB(10,20, 10,30),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -35,6 +39,7 @@ class ContentModalIngressos extends StatelessWidget {
                         style: TextStyle(
                           color: darkGray,
                           fontSize: 18,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
@@ -73,7 +78,7 @@ class ContentModalIngressos extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "• Pagamento somente em espécie na bilheteria.\n",
+                        "• Pagamento somente em espécie na bilheteria.",
                         style: TextStyle(
                           color: darkGray,
                           fontSize: 18,
@@ -82,10 +87,16 @@ class ContentModalIngressos extends StatelessWidget {
                     ],
                   ),
                 ),
-                EntendiButton()
-              ],
-            )),
-      ),
+               
+                  ],
+                ),
+                ),
+              ),
+               Padding(
+                padding: EdgeInsets.only(top: 22),
+                child: EntendiButton())
+            ],
+          )),
     );
   }
 }

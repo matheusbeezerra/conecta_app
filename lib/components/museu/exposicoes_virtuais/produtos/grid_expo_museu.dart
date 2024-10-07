@@ -16,9 +16,9 @@ class GridExpoMuseu extends StatelessWidget {
       textDirection: TextDirection.ltr,
       child: GridView.count(
         crossAxisCount: 2,
-      //  mainAxisSpacing: 0.2,
-        // crossAxisSpacing: 2,
-        childAspectRatio: 1.2, // Adicione padding
+       mainAxisSpacing: 4,
+        crossAxisSpacing: 2,
+        childAspectRatio: 1, // Adicione padding
         shrinkWrap: true,
         children: dataExpoMuseu.map((expo) {
           return ItemExpoMuseu(expo);

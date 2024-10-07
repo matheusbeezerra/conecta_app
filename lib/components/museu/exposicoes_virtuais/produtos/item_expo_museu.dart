@@ -29,7 +29,7 @@ class ItemExpoMuseu extends StatelessWidget {
               // para imagem
               margin: const EdgeInsets.all(4),
               width: 185,
-              height: 110,
+              height: 150,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 image: DecorationImage(
