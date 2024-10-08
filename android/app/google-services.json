@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "433167441534",
+    "project_id": "conectactinfo-8aa67",
+    "storage_bucket": "conectactinfo-8aa67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433167441534:android:66cd0aa6566d7f7b2e422f",
+        "android_client_info": {
+          "package_name": "com.example.conecta_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDncRLh0OC7eWBvMSGpACTBiQtYn-ukhPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
