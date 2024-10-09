@@ -20,13 +20,15 @@ class ItemProdutoFundaj extends StatelessWidget {
               _showFormacaoBottomSheet(context);
               break;
             case 'PIBIC':
-              _launchURL(context, 'https://www.gov.br/fundaj/pt-br/composicao/dipes-1/pibic');
+              _launchURL(context,
+                  'https://www.gov.br/fundaj/pt-br/composicao/dipes-1/pibic');
               break;
             case 'Cinemateca':
               _launchURL(context, 'https://cinematecapernambucana.com.br/');
               break;
             case 'Pesquisa\nEscolar':
-              _launchURL(context, 'https://pesquisaescolar.fundaj.gov.br/pt-br/');
+              _launchURL(
+                  context, 'https://pesquisaescolar.fundaj.gov.br/pt-br/');
               break;
             case 'Villa\nDigital':
               _launchURL(context, 'https://villadigital.fundaj.gov.br/');
@@ -40,27 +42,29 @@ class ItemProdutoFundaj extends StatelessWidget {
               );
           }
         },
-        child: Column(
-          children: [
-            Container(
-              margin: const EdgeInsets.all(2),
-              width: 75,
-              height: 75,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(
-                  width: 2,
-                  color: lightGray,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(2),
+                width: 75,
+                height: 75,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    width: 2,
+                    color: lightGray,
+                  ),
                 ),
+                child: Image.asset(produtosFundaj.imgProduto),
               ),
-              child: Image.asset(produtosFundaj.imgProduto),
-            ),
-            Text(
-              produtosFundaj.produto,
-              style: const TextStyle(fontSize: 14, color: darkGray),
-            ),
-          ],
+              Text(
+                produtosFundaj.produto,
+                style: const TextStyle(fontSize: 14, color: darkGray),
+              ),
+            ],
+          ),
         ),
       ),
     );

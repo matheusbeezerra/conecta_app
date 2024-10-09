@@ -12,6 +12,7 @@ class TextExploreCampus extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         _buildCustomText("Explore nossos campus", SectionTitle.textStyle,),
+        _buildCustomText("Clique em um card para saber mais", SectionSubTitle.textStyle,),
       ],
     );
   }

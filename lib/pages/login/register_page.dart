@@ -1,3 +1,4 @@
+import 'package:conecta_app/service/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:conecta_app/pages/login/login_page.dart';
 
@@ -50,16 +51,17 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
             TextFormField(
               controller: confirmPasswordController,
-              decoration: const InputDecoration(labelText: 'Confirme sua senha'),
+              decoration:
+                  const InputDecoration(labelText: 'Confirme sua senha'),
               obscureText: true,
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {
-                 Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => LoginPage()),
-                        );
+              onPressed: () async {
+                await AuthService().signup(
+                    email: nameController.text,
+                    password: passwordController.text,
+                    context: context);
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 26, 77, 28),
