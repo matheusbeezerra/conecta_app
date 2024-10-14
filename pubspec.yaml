@@ -87,6 +87,7 @@ flutter:
     - assets/svg/filme_8.jpeg
     - assets/svg/filme_9.jpeg
     - assets/svg/filme_10.jpeg
+    - assets/google.png
 
     #ICONES BOTTOM NAVIGATOR
     - assets/svg/bottom_navigator_bar/icone_noticias.svg

@@ -104,7 +104,11 @@ class LoginPage extends StatelessWidget {
                     const SizedBox(height: 30),
                     ElevatedButton.icon(
                       onPressed: () {},
-                      icon: const Icon(Icons.account_circle_rounded, size: 30),
+                      icon: Image.asset(
+                        'assets/google.png',
+                        width: 30,
+                        height: 30,
+                      ),
                       label: const Text("Entrar usando minha conta Google",
                           style: TextStyle(fontSize: 16)),
                       style: ElevatedButton.styleFrom(
