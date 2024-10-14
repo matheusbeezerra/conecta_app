@@ -21,7 +21,7 @@ class TextExplorePossibilidades extends StatelessWidget {
     return Text(
       text,
       textDirection: TextDirection.ltr,
-      textAlign: TextAlign.left, // Ajuste o alinhamento aqui
+      textAlign: TextAlign.left,
       style: style,
     );
   }

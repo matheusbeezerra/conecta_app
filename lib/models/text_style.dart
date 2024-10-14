@@ -5,17 +5,23 @@ import 'package:flutter/material.dart';
 class SectionTitle {
   static const TextAlign titleAlign = TextAlign.left;
   static const TextStyle textStyle = TextStyle(
-    // fontFamily: 'Nunito',
     fontSize: 20,
     fontWeight: FontWeight.bold,
     color:darkGreen,
   );
 }
+class SectionSubTitle {
+  static const TextAlign titleAlign = TextAlign.left;
+  static const TextStyle textStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.bold,
+    color:mediumGray,
+  );
+}
 class SecondarySectionTitle {
   static const TextAlign titleAlign = TextAlign.left;
   static const TextStyle textStyle = TextStyle(
-    // fontFamily: 'Nunito',
-    fontSize: 18,
+    fontSize: 12,
     fontWeight: FontWeight.bold,
     color:mediumGray,
   );
@@ -23,7 +29,6 @@ class SecondarySectionTitle {
 class ParagraphTexts {
   static const TextAlign titleAlign = TextAlign.left;
   static const TextStyle textStyle = TextStyle(
-    // fontFamily: 'Nunito',
     fontSize: 16,
     fontWeight: FontWeight.normal,
     color:blackColor,

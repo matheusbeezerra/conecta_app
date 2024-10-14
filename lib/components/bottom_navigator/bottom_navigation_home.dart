@@ -1,5 +1,6 @@
 import 'package:conecta_app/models/colors.dart';
 import 'package:conecta_app/pages/login/login_page.dart';
+import 'package:conecta_app/service/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -17,7 +18,7 @@ class BottomNavigationBarHome extends StatelessWidget {
       items: [
         BottomNavigationBarItem(
           icon: GestureDetector(
-              child:  const Icon(
+              child: const Icon(
             Icons.home_filled,
             size: 28,
           )),
@@ -63,11 +64,8 @@ class BottomNavigationBarHome extends StatelessWidget {
         ),
         BottomNavigationBarItem(
           icon: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => LoginPage()),
-                );
+              onTap: () async {
+                await AuthService().signout(context: context);
               },
               child: const Icon(
                 Icons.logout_outlined,

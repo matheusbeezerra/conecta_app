@@ -9,8 +9,8 @@ class TextHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.fromLTRB(0, 26, 0, 10),
-      child: Text("Bem Vindo à Fundaj ",textDirection: TextDirection.ltr,textAlign: TextAlign.left,
-            style: TextStyle(fontSize:40, color:darkGreen,fontWeight: FontWeight.bold)),
+      child: Text("Bem vindo à Fundaj ",textDirection: TextDirection.ltr,textAlign: TextAlign.left,
+            style: TextStyle(fontSize:30, color:darkGreen,fontWeight: FontWeight.bold)),
     );
   }
 }

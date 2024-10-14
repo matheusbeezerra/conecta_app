@@ -1,6 +1,7 @@
 import 'package:conecta_app/models/colors.dart';
 import 'package:conecta_app/pages/home/home_page.dart';
 import 'package:conecta_app/pages/login/register_page.dart';
+import 'package:conecta_app/service/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:conecta_app/components/button.dart';
@@ -14,40 +15,6 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    void signUserIn(BuildContext context) async {
-      String email = usernameController.text;
-      String password = passwordController.text;
-
-      try {
-        // final response = await apiService.loginUser(email, password);
-        // Aqui você pode salvar o token de autenticação ou qualquer outra coisa necessária
-
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const HomePage()),
-        );
-      } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Row(
-              children: [
-                const Icon(Icons.error, color: Colors.white),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Text(
-                    "Erro ao fazer login: ${e.toString()}",
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ),
-              ],
-            ),
-            backgroundColor: Colors.red,
-            behavior: SnackBarBehavior.floating,
-          ),
-        );
-      }
-    }
-
     return Scaffold(
       backgroundColor: const Color(0xFFFFFFFF),
       body: Padding(
@@ -97,7 +64,12 @@ class LoginPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 35),
                     Button(
-                      onTap: () => signUserIn(context),
+                      onTap: () async {
+                        await AuthService().signin(
+                            email: usernameController.text,
+                            password: passwordController.text,
+                            context: context);
+                      },
                     ),
                     const SizedBox(height: 40),
                     const Padding(
@@ -132,7 +104,11 @@ class LoginPage extends StatelessWidget {
                     const SizedBox(height: 30),
                     ElevatedButton.icon(
                       onPressed: () {},
-                      icon: const Icon(Icons.account_circle_rounded, size: 30),
+                      icon: Image.asset(
+                        'assets/google.png',
+                        width: 30,
+                        height: 30,
+                      ),
                       label: const Text("Entrar usando minha conta Google",
                           style: TextStyle(fontSize: 16)),
                       style: ElevatedButton.styleFrom(
