@@ -7,7 +7,7 @@ import 'package:conecta_app/components/campus/icones_produtos_green/icone_pesqui
 import 'package:conecta_app/components/campus/icones_produtos_green/icone_pinacoteca.dart';
 import 'package:conecta_app/components/campus/icones_produtos_green/icone_villa.dart';
 import 'package:conecta_app/models/campus/info_card_campus.dart';
-//Dados e imagens dos Campus,mokados para o carossel de campus na home
+//Dados e imagens dos Campi,mokados para o carossel de campi na home
 
 const dataCampus = [
   DataCardCampus(
